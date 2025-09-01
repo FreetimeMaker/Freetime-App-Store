@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     private List<AppInfo> createAppList() {
         List<AppInfo> apps = new ArrayList<>();
         // Replace with direct APK URLs (not Google Drive share links!)
-        apps.add(new AppInfo("GeoWeather", "https://api.github.com/repos/FreetimeMaker/GeoWeather/releases/latest/GeoWeather.apk", "GeoWeather.apk"));
+        apps.add(new AppInfo("GeoWeather", "https://api.github.com/repos/FreetimeMaker/GeoWeather/releases/latest", "GeoWeather.apk"));
         apps.add(new AppInfo("Donation", "https://api.github.com/repos/FreetimeMaker/Donation/releases/latest/Donation.apk", "Donation.apk"));
         apps.add(new AppInfo("Freetime App Store", "https://api.github.com/repos/FreetimeMaker/Freetime-App-Store/releases/latest/FreetimeAppStore.apk", "FreetimeAppStore.apk"));
         return apps;

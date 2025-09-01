@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
 import android.widget.Toast;
+import androidx.core.content.ContextCompat;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+    
+
     private final BroadcastReceiver onDownloadComplete = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -57,16 +60,19 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+// Receiver registration is handled in onCreate() below.
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(onDownloadComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), RECEIVER_NOT_EXPORTED);
-        } else {
-            registerReceiver(onDownloadComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
-        }
+        ContextCompat.registerReceiver(
+            this,
+            onDownloadComplete,
+            new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE),
+            ContextCompat.RECEIVER_NOT_EXPORTED // Use _NOT_EXPORTED for security
+        );
 
         RecyclerView appsRecyclerView = findViewById(R.id.appsRecyclerView);
         appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -85,7 +91,9 @@ public class MainActivity extends AppCompatActivity {
     private List<AppInfo> createAppList() {
         List<AppInfo> apps = new ArrayList<>();
         // Replace with direct APK URLs (not Google Drive share links!)
-        apps.add(new AppInfo("GeoWeather", "https://yourdomain.com/GeoWeather.apk", "GeoWeather.apk"));
+        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/download/v1.0.0/GeoWeather.apk", "GeoWeather.apk"));
+        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/download/v1.0.0/Donation.apk", "Donation.apk"));
+        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.0.1/FreetimeAppStore.apk", "FreetimeAppStore.apk"));
         return apps;
     }
 

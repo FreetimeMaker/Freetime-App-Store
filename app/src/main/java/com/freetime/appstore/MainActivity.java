@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                             startDownload(currentAppToDownload);
                         }
                     } else {
-                        Toast.makeText(this, "Berechtigung zur Installation nicht erteilt.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Permission for Installing Apps not gotten.", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             long id = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
             if (downloadIdToFileNameMap.containsKey(id)) {
                 String fileName = downloadIdToFileNameMap.get(id);
-                Toast.makeText(MainActivity.this, "Download abgeschlossen: " + fileName, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Download Completed: " + fileName, Toast.LENGTH_SHORT).show();
                 installApk(fileName);
                 downloadIdToFileNameMap.remove(id);
             }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setTitle(app.getName());
-        request.setDescription("Lädt herunter " + app.getName());
+        request.setDescription("Downloading " + app.getName());
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 
@@ -125,14 +125,14 @@ public class MainActivity extends AppCompatActivity {
         long downloadId = manager.enqueue(request);
         downloadIdToFileNameMap.put(downloadId, fileName);
 
-        Toast.makeText(this, "Download gestartet: " + fileName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Startet Download: " + fileName, Toast.LENGTH_SHORT).show();
     }
 
     private void installApk(String fileName) {
         File apkFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), fileName);
 
         if (!apkFile.exists()) {
-            Toast.makeText(this, "APK nicht gefunden: " + fileName, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "APK not found: " + fileName, Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -15,41 +15,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
         <activity
-            android:name=".FASDCoin_Activity"
-            android:exported="false" />
+            android:name=".FASDCoin_Activity"/>
         <activity
-            android:name=".FASDOxa_Activity"
-            android:exported="false" />
+            android:name=".FASDOxa_Activity"/>
         <activity
-            android:name=".FASD_Activity"
-            android:exported="false" />
+            android:name=".FASD_Activity"/>
         <activity
-            android:name=".FAS_Activity"
-            android:exported="false" />
+            android:name=".FAS_Activity"/>
         <activity
-            android:name=".DDCoin_Activity"
-            android:exported="false" />
+            android:name=".DDCoin_Activity"/>
         <activity
-            android:name=".DDOxa_Activity"
-            android:exported="false" />
+            android:name=".DDOxa_Activity"/>
         <activity
-            android:name=".DD_Activity"
-            android:exported="false" />
+            android:name=".DD_Activity"/>
         <activity
-            android:name=".DonationActivity"
-            android:exported="false" />
+            android:name=".DonationActivity"/>
         <activity
-            android:name=".GWDCoin_Activity"
-            android:exported="false" />
+            android:name=".GWDCoin_Activity"/>
         <activity
-            android:name=".GWDOxa_Activity"
-            android:exported="false" />
+            android:name=".GWDOxa_Activity"/>
         <activity
-            android:name=".GWD_Activity"
-            android:exported="false" />
+            android:name=".GWD_Activity"/>
         <activity
-            android:name=".GeoWeatherActivity"
-            android:exported="false" />
+            android:name=".GeoWeatherActivity"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"

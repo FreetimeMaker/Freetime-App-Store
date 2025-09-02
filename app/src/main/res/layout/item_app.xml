@@ -5,7 +5,9 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:gravity="center_vertical">
+    android:paddingTop="16dp"
+    android:gravity="center_vertical"
+    android:id="@+id/itemAppLayout">
 
     <TextView
         android:id="@+id/appNameTextView"
@@ -15,10 +17,10 @@
         android:textSize="18sp"
         tools:text="GeoWeather" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/downloadAppButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Download GeoWeather" />
+        android:text="Download" />
 
 </LinearLayout>

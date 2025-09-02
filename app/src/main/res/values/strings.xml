@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Freetime App Store</string>
+    <string name="download_text">Download</string>
 </resources>

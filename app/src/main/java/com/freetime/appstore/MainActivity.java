@@ -80,7 +80,27 @@ public class MainActivity extends AppCompatActivity {
         List<AppInfo> appList = createAppList();
         AppAdapter adapter = new AppAdapter(appList, this::checkInstallPermissionAndDownload);
         appsRecyclerView.setAdapter(adapter);
+
+        LinearLayout buttonContainer = findViewById(R.id.itemAppLayout);
+        List<AppInfo> apps = createAppList();
+
+        for (AppInfo app : apps) {
+            MaterialButton appButton = new MaterialButton(this);
+            appButton.setText("Download " + app.getName()); // Individueller Text
+            appButton.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ));
+            appButton.setOnClickListener(v -> checkInstallPermissionAndDownload(app));
+            buttonContainer.addView(appButton);
+        }
+
+
+    appButton.setOnClickListener(v -> checkInstallPermissionAndDownload(app));
+
+    buttonContainer.addView(appButton);
     }
+
 
     @Override
     protected void onDestroy() {

@@ -1,25 +1,21 @@
 package com.freetime.appstore;
 
 public class AppInfo {
-    private final String name;
-    private final String url;
-    private final String fileName;
+    private String name;
+    private String url;
+    private String fileName;
+    private String description;
 
-    public AppInfo(String name, String url, String fileName) {
+    public AppInfo(String name, String url, String fileName, String description) {
         this.name = name;
         this.url = url;
         this.fileName = fileName;
+        this.description = description;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
+    // Getters
+    public String getName() { return name; }
+    public String getUrl() { return url; }
+    public String getFileName() { return fileName; }
+    public String getDescription() { return description; }
 }

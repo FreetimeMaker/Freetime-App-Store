@@ -31,4 +31,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, FAPActivity.class);
             startActivity(intent);
         });
+    }
 }

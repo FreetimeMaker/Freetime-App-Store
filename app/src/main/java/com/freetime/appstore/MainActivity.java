@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnGeoWeather = findViewById(R.id.btnGeoWeather);
-
         btnGeoWeather.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, GeoWeatherActivity.class);
             startActivity(intent);
@@ -26,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button btnFAP = findViewById(R.id.btnFAP);
-        btnFAP.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FAPActivity.class);
+        Button btnFAS = findViewById(R.id.btnFAS);
+        btnFAS.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FAS_Activity.class);
             startActivity(intent);
         });
     }

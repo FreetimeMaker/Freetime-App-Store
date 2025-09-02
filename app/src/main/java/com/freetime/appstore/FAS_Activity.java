@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GeoWeatherActivity extends AppCompatActivity {
+public class FAS_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,14 +15,14 @@ public class GeoWeatherActivity extends AppCompatActivity {
 
         Button btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(v -> {
-            Intent intent = new Intent(GeoWeatherActivity.this, MainActivity.class);
+            Intent intent = new Intent(FAS_Activity.this, MainActivity.class);
             startActivity(intent);
             finish();
         });
 
         Button btnInstall = findViewById(R.id.btnInstall);
         btnInstall.setOnClickListener(v -> {
-            String url = "https://github.com/FreetimeMaker/GeoWeather/releases/download/v1.0.0/GeoWeather.apk";
+            String url = "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.0.2/FAS.apk";
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
             startActivity(intent);
@@ -30,7 +30,7 @@ public class GeoWeatherActivity extends AppCompatActivity {
 
         Button btnDonate = findViewById(R.id.btnDonate);
         btnDonate.setOnClickListener(v -> {
-            Intent intent = new Intent(GeoWeatherActivity.this, GWD_Activity.class);
+            Intent intent = new Intent(FAS_Activity.this, FASD_Activity.class);
             startActivity(intent);
             finish();
         });

@@ -15,6 +15,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
         <activity
+            android:name=".FASDCoin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FASDOxa_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FASD_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FAS_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DDCoin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DDOxa_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DD_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GWDCoin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GWDOxa_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GWD_Activity"
+            android:exported="false" />
+        <activity
             android:name=".GeoWeatherActivity"
             android:exported="false" />
 

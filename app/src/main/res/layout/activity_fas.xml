@@ -20,7 +20,7 @@
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="GeoWeather"
+                android:text="Freetime App Store"
                 android:textAlignment="center"/>
 
             <GridLayout
@@ -37,14 +37,14 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="25dp"
-                    android:src="@drawable/geoweather_logo" />
+                    android:src="@drawable/fas_logo" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnInstall"
                     android:layout_width="210dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="25dp"
-                    android:text="Install GeoWeather" />
+                    android:text="Install Freetime App Store" />
 
             </GridLayout>
 
@@ -54,7 +54,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Get the current weather information based on your location."
+                android:text="The App Store you are currently Using."
                 android:textAlignment="center"/>
 
             <com.google.android.material.card.MaterialCardView

@@ -21,12 +21,16 @@ public class GeoWeatherActivity extends AppCompatActivity {
         });
 
         Button btnInstall = findViewById(R.id.btnInstall);
-        btnInstall.setOnClickListener(v -> {
-            String url = "https://github.com/FreetimeMaker/GeoWeather/releases/download/v1.0.0/GeoWeather.apk";
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
+        GWUpdateChecker.checkForUpdate("1.0.1", "FreetimeMaker", "GeoWeather", downloadUrl -> {
+            runOnUiThread(() -> {
+                btnInstall.setText("Update available! Click to download.");
+                btnInstall.setOnClickListener(v -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(downloadUrl));
+                    startActivity(intent);
+                });
+            });
         });
+
 
         Button btnDonate = findViewById(R.id.btnDonate);
         btnDonate.setOnClickListener(v -> {

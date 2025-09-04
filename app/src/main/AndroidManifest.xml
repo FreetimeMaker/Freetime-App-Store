@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,31 +15,6 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
-        <activity
-            android:name=".FASDCoin_Activity"/>
-        <activity
-            android:name=".FASDOxa_Activity"/>
-        <activity
-            android:name=".FASD_Activity"/>
-        <activity
-            android:name=".FAS_Activity"/>
-        <activity
-            android:name=".DDCoin_Activity"/>
-        <activity
-            android:name=".DDOxa_Activity"/>
-        <activity
-            android:name=".DD_Activity"/>
-        <activity
-            android:name=".DonationActivity"/>
-        <activity
-            android:name=".GWDCoin_Activity"/>
-        <activity
-            android:name=".GWDOxa_Activity"/>
-        <activity
-            android:name=".GWD_Activity"/>
-        <activity
-            android:name=".GeoWeatherActivity"/>
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

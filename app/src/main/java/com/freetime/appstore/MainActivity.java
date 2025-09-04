@@ -5,11 +5,13 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
+import android.util.Log;
 import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 
@@ -21,11 +23,24 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import static android.content.Context.RECEIVER_NOT_EXPORTED;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,6 +95,17 @@ public class MainActivity extends AppCompatActivity {
         appsRecyclerView.setAdapter(adapter);
     }
 
+    private static String getAppVersionName(Context context) {
+        try {
+            PackageManager pm = context.getPackageManager();
+            PackageInfo pInfo = pm.getPackageInfo(context.getPackageName(), 0);
+            return pInfo.versionName; // z. B. "1.2.3"
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return "0.0.0";
+        }
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -89,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
     private List<AppInfo> createAppList() {
         List<AppInfo> apps = new ArrayList<>();
         // Replace with direct APK URLs (not Google Drive share links!)
-        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/download/v1.0.1/GeoWeather.apk", "GeoWeather.apk"));
-        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/download/v1.0.1/Donation.apk", "Donation.apk"));
-        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.0.5/FreetimeAppStore.apk", "FAS.apk"));
+        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/download/v1.0.2/GeoWeather.apk", "GeoWeather.apk"));
+        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/download/v1.0.2/Donation.apk", "Donation.apk"));
+        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.0.6/FreetimeAppStore.apk", "FAS.apk"));
         return apps;
     }
 
@@ -123,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         long downloadId = manager.enqueue(request);
         downloadIdToFileNameMap.put(downloadId, fileName);
 
-        Toast.makeText(this, "Startet Download: " + fileName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Download started: " + fileName, Toast.LENGTH_SHORT).show();
     }
 
     private void installApk(String fileName) {

@@ -1,5 +1,8 @@
 package com.freetime.appstore;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class AppInfo {
     private final String name;
     private final String url;
@@ -21,5 +24,9 @@ public class AppInfo {
 
     public String getFileName() {
         return fileName;
+    }
+
+    public void setUrl(String downloadUrl) throws MalformedURLException {
+        new URL("https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest");
     }
 }

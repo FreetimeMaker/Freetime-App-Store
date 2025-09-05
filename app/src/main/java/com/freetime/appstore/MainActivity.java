@@ -22,14 +22,7 @@ import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -65,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+    private AppAdapter.OnDownloadClickListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         appsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<AppInfo> appList = createAppList();
-        AppAdapter adapter = new AppAdapter(appList, this::checkGitHubForUpdate);
+        AppAdapter adapter = new AppAdapter(appList, listener);
         appsRecyclerView.setAdapter(adapter);
     }
 
@@ -108,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         // Name, GitHub Owner, Repo, Dateiname
         apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/latest",  "GeoWeather.apk"));
         apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/latest", "Donation.apk"));
-        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest", "FAS.apk"));
+        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest", "FreetimeAppStore.apk"));
         return apps;
     }
 

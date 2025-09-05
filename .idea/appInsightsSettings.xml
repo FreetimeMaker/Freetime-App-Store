@@ -9,10 +9,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.freetime.appstore" />
-                  <option name="mobileSdkAppId" value="1:766218270220:android:b3b97e3e14ff69e9fd2029" />
-                  <option name="projectId" value="freetime-app-store" />
-                  <option name="projectNumber" value="766218270220" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

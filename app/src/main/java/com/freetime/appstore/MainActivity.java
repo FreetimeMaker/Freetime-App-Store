@@ -106,54 +106,10 @@ public class MainActivity extends AppCompatActivity {
     private List<AppInfo> createAppList() {
         List<AppInfo> apps = new ArrayList<>();
         // Name, GitHub Owner, Repo, Dateiname
-        apps.add(new AppInfo("GeoWeather", "FreetimeMaker",  "GeoWeather.apk"));
-        apps.add(new AppInfo("Donation", "FreetimeMaker", "Donation.apk"));
-        apps.add(new AppInfo("Freetime App Store", "FreetimeMaker", "FAS.apk"));
+        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/latest",  "GeoWeather.apk"));
+        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/latest", "Donation.apk"));
+        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest", "FAS.apk"));
         return apps;
-    }
-
-    private void checkGitHubForUpdate(AppInfo app) {
-        this.currentAppToDownload = app;
-        new Thread(() -> {
-            try {
-                URL url = new URL("https://api.github.com/repos/FreetimeMaker/Freetime-App-Store/releases/latest");
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestProperty("Accept", "application/vnd.github.v3+json");
-
-                BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                StringBuilder sb = new StringBuilder();
-                String line;
-                while ((line = reader.readLine()) != null) sb.append(line);
-                reader.close();
-
-                JSONObject release = new JSONObject(sb.toString());
-                String latestVersion = release.getString("tag_name").replace("v", "");
-
-                // Für eigene App: lokale Version prüfen
-                String currentVersion = app.getName().equals("Freetime App Store")
-                        ? getAppVersionName(this)
-                        : "0.0.0"; // Bei Fremd-Apps ggf. anders prüfen
-
-                if (latestVersion.compareTo(currentVersion) > 0) {
-                    JSONArray assets = release.getJSONArray("assets");
-                    for (int i = 0; i < assets.length(); i++) {
-                        JSONObject asset = assets.getJSONObject(i);
-                        if (asset.getString("name").endsWith(".apk")) {
-                            String downloadUrl = asset.getString("browser_download_url");
-                            app.setUrl(downloadUrl);
-                            runOnUiThread(() -> checkInstallPermissionAndDownload(app));
-                            return;
-                        }
-                    }
-                } else {
-                    runOnUiThread(() -> Toast.makeText(this, app.getName() + " is up to date", Toast.LENGTH_SHORT).show());
-                }
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                runOnUiThread(() -> Toast.makeText(this, "Update-Check failed", Toast.LENGTH_SHORT).show());
-            }
-        }).start();
     }
 
     private void checkInstallPermissionAndDownload(AppInfo app) {

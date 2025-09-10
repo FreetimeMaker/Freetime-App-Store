@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FM_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,19 +47,19 @@
             android:id="@+id/DonoLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/donation_logo" />
+            android:src="@drawable/FAS_logo" />
 
         <TextView
-            android:id="@+id/DonationText"
+            android:id="@+id/FASText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Donation" />
+            android:text="FAS" />
 
         <Button
             android:id="@+id/donoInfobtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get more Infos about Donation" />
+            android:text="Get more Infos about FAS" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,21 +98,15 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/ghLogo"
+            android:id="@+id/backLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/gh_logo" />
-
-        <TextView
-            android:id="@+id/ghText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Want to see Your App here?" />
+            android:src="@drawable/back_btn" />
 
         <Button
-            android:id="@+id/ghInfobtn"
+            android:id="@+id/backbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get more Infos about how to get Your App in here?" />
+            android:text="Go Back to Main Menu" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

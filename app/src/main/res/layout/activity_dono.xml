@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GW_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn" />
+
+        <ImageView
+            android:id="@+id/DonationLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/donation_logo" />
+
+        <TextView
+            android:id="@+id/DonationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donation" />
+
+        <TextView
+            android:id="@+id/DonationVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.2" />
+
+        <Button
+            android:id="@+id/DonationDbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Donation" />
+
+        <TextView
+            android:id="@+id/DonationDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donation is like the Name already says an app where you can Donate" />
+
+        <Button
+            android:id="@+id/DonationDonobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate to the Developer of Donation" />
+
+        <TextView
+            android:id="@+id/DonationDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by Freetime Maker" />
+
+        <TextView
+            android:id="@+id/DonationPerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permissions: Internet" />
+
+        <Button
+            android:id="@+id/DonationSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View the Source Code of Donation" />
+
+        <Button
+            android:id="@+id/MAOFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Apps by Freetime Maker" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

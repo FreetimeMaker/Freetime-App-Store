@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
     private List<AppInfo> createAppList() {
         List<AppInfo> apps = new ArrayList<>();
         // Name, GitHub Owner, Repo, Dateiname
-        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/latest",  "GeoWeather.apk"));
-        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/latest", "Donation.apk"));
-        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/latest", "FreetimeAppStore.apk"));
+        apps.add(new AppInfo("GeoWeather", "https://github.com/FreetimeMaker/GeoWeather/releases/tag/v1.0.3",  "GeoWeather.apk"));
+        apps.add(new AppInfo("Donation", "https://github.com/FreetimeMaker/Donation/releases/tag/v1.0.2", "Donation.apk"));
+        apps.add(new AppInfo("Freetime App Store", "https://github.com/FreetimeMaker/Freetime-App-Store/releases/tag/v1.0.9", "FreetimeAppStore.apk"));
         return apps;
     }
 

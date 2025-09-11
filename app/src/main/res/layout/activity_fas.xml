@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GW_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn" />
+
+        <ImageView
+            android:id="@+id/FASLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fas_logo" />
+
+        <TextView
+            android:id="@+id/FASText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Freetime App Store" />
+
+        <TextView
+            android:id="@+id/FASVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.8" />
+
+        <Button
+            android:id="@+id/FASDbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Freetime App Store" />
+
+        <TextView
+            android:id="@+id/FASDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Freetime App Store is an app where you can find and download various apps from different Publishers." />
+
+        <Button
+            android:id="@+id/FASDonobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate to the Developer of Freetime App Store" />
+
+        <TextView
+            android:id="@+id/FASDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by Freetime Maker" />
+
+        <TextView
+            android:id="@+id/FASPerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permissions: Internet, Write External Storage, Request Package Install, Access Network State" />
+
+        <Button
+            android:id="@+id/FASSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View the Source Code of Freetime App Store" />
+
+        <Button
+            android:id="@+id/MAOFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Apps by Freetime Maker" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

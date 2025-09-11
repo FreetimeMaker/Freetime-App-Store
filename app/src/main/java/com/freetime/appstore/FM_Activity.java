@@ -18,34 +18,34 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 
-public class MainActivity extends AppCompatActivity {
+public class FM_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_fm);
 
         Button gwInfobtn = findViewById(R.id.gwInfobtn);
         gwInfobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, GW_Activity.class);
+            Intent intent = new Intent(FM_Activity.this, GW_Activity.class);
             startActivity(intent);
         });
 
-        Button donoInfobtn = findViewById(R.id.donoInfobtn);
-        donoInfobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Dono_Activity.class);
+        Button donoInfoBtn = findViewById(R.id.donoInfoBtn);
+        donoInfoBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, Dono_Activity.class);
             startActivity(intent);
         });
 
-        Button fasInfobtn = findViewById(R.id.fasInfobtn);
-        fasInfobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FAS_Activity.class);
+        Button fasInfoBtn = findViewById(R.id.fasInfoBtn);
+        fasInfoBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, FAS_Activity.class);
             startActivity(intent);
         });
 
-        Button ghInfobtn = findViewById(R.id.ghInfobtn);
-        ghInfobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, GH_Activity.class);
+        Button backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, HomeActivity.class);
             startActivity(intent);
         });
     }

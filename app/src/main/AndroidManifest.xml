@@ -36,6 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FM_Activity" />
+        <activity android:name=".Dono_Activity" />
+        <activity android:name=".GW_Activity" />
+        <activity android:name=".FAS_Activity" />
     </application>
 
 </manifest>

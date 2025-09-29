@@ -18,7 +18,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 
-public class DONO_Activity extends AppCompatActivity {
+public class Dono_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class DONO_Activity extends AppCompatActivity {
 
         Button DonationDbtn = findViewById(R.id.DonationDbtn);
         DonationDbtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Donation/releases/download/v1.0.2/Donation.apk"; // Direct APK link
+            String fileUrl = "https://github.com/FreetimeMaker/Donation/releases/download/v1.0.3/Donation.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
             request.setTitle("Donation Download");

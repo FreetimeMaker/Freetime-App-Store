@@ -56,6 +56,7 @@
         <activity android:name=".SOL_Activity" />
         <activity android:name=".USDC_Activity" />
         <activity android:name=".USDT_Activity" />
+        <activity android:name=".GH_Activity" />
     </application>
 
 </manifest>

@@ -1,11 +1,14 @@
 package com.freetime.appstore;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +19,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 
 public class GW_Activity extends AppCompatActivity {
@@ -50,12 +64,6 @@ public class GW_Activity extends AppCompatActivity {
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
             downloadManager.enqueue(request);
-        });
-
-        Button GWDonobtn = findViewById(R.id.GWDonobtn);
-        GWDonobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(GW_Activity.this, GWDonoActivity.class);
-            startActivity(intent);
         });
 
         Button GWSource = findViewById(R.id.GWSource);

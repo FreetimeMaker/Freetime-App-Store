@@ -1,11 +1,14 @@
 package com.freetime.appstore;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -50,12 +53,6 @@ public class Dono_Activity extends AppCompatActivity {
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
             downloadManager.enqueue(request);
-        });
-
-        Button DonationDonobtn = findViewById(R.id.DonationDonobtn);
-        DonationDonobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(Dono_Activity.this, DonationDonoActivity.class);
-            startActivity(intent);
         });
 
         Button DonationSource = findViewById(R.id.DonationSource);

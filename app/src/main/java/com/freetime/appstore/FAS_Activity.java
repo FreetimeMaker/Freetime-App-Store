@@ -1,11 +1,14 @@
 package com.freetime.appstore;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -50,12 +53,6 @@ public class FAS_Activity extends AppCompatActivity {
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
             downloadManager.enqueue(request);
-        });
-
-        Button FASDonobtn = findViewById(R.id.FASDonobtn);
-        FASDonobtn.setOnClickListener(v -> {
-            Intent intent = new Intent(FAS_Activity.this, FASDonoActivity.class);
-            startActivity(intent);
         });
 
         Button FASSource = findViewById(R.id.FASSource);

@@ -52,12 +52,6 @@
             android:layout_height="wrap_content"
             android:text="Donation is like the Name already says an app where you can Donate" />
 
-        <Button
-            android:id="@+id/DonationDonobtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Donate to the Developer of Donation" />
-
         <TextView
             android:id="@+id/DonationDev"
             android:layout_width="wrap_content"

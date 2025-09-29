@@ -5,8 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
-    android:maxSdkVersion="28"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +18,7 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -40,6 +42,20 @@
         <activity android:name=".Dono_Activity" />
         <activity android:name=".GW_Activity" />
         <activity android:name=".FAS_Activity" />
+        <activity android:name=".FM_Dono_Activity" />
+        <activity android:name=".BitcoinActivity" />
+        <activity android:name=".EthereumActivity" />
+        <activity android:name=".OxaPayActivity" />
+        <activity android:name=".CoinbaseActivity" />
+        <activity android:name=".BNB_Activity" />
+        <activity android:name=".PEPE_Activity" />
+        <activity android:name=".LTC_Activity" />
+        <activity android:name=".DogeActivity" />
+        <activity android:name=".TronActivity" />
+        <activity android:name=".ShibActivity" />
+        <activity android:name=".SOL_Activity" />
+        <activity android:name=".USDC_Activity" />
+        <activity android:name=".USDT_Activity" />
     </application>
 
 </manifest>

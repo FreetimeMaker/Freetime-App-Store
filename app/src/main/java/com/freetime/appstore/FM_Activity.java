@@ -25,27 +25,33 @@ public class FM_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fm);
 
+        Button fmDonobtn = findViewById(R.id.fmDonobtn);
+        fmDonobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, FM_Dono_Activity.class);
+            startActivity(intent);
+        });
+
         Button gwInfobtn = findViewById(R.id.gwInfobtn);
         gwInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, GW_Activity.class);
             startActivity(intent);
         });
 
-        Button donoInfoBtn = findViewById(R.id.donoInfoBtn);
+        Button donoInfoBtn = findViewById(R.id.donoInfobtn);
         donoInfoBtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, Dono_Activity.class);
             startActivity(intent);
         });
 
-        Button fasInfoBtn = findViewById(R.id.fasInfoBtn);
+        Button fasInfoBtn = findViewById(R.id.fasInfobtn);
         fasInfoBtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, FAS_Activity.class);
             startActivity(intent);
         });
 
-        Button backBtn = findViewById(R.id.backBtn);
+        Button backBtn = findViewById(R.id.backbtn);
         backBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(FM_Activity.this, HomeActivity.class);
+            Intent intent = new Intent(FM_Activity.this, MainActivity.class);
             startActivity(intent);
         });
     }

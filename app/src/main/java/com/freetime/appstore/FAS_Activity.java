@@ -36,7 +36,7 @@ public class FAS_Activity extends AppCompatActivity {
 
         Button FASDbtn = findViewById(R.id.FASDbtn);
         FASDbtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.0.9/FAS.apk"; // Direct APK link
+            String fileUrl = "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.1.0/FAS.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
             request.setTitle("FAS Download");

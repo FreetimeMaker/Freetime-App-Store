@@ -1,6 +1,9 @@
 package com.freetime.appstore;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +18,18 @@ public class GH_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_gh);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        Button backbtn = findViewById(R.id.backbtn);
+        backbtn.setOnClickListener(v -> {
+            Intent intent = new Intent(GH_Activity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        Button srccdbtn = findViewById(R.id.srccdbtn);
+        srccdbtn.setOnClickListener(v -> {
+            String url = "https://github.com/FreetimeMaker/Freetime-App-Store/"; // URL of the GitHub repository
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
         });
     }
 }

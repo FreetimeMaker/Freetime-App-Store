@@ -13,13 +13,85 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Go Back to Main Menu" />
+
+            <ImageView
+                android:id="@+id/ghlogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gh_logo" />
+
+        <TextView
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Learn how your App gets Approved on Freetime App Store"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:paddingTop="16dp"
+            android:text="Freetime App Store is a one Person driven app store. I review and rebuild every app that is submitted to my store. I do not allow apps that are offensive or that contain hate speech. I do not allow apps that have In-App-Purchases in it. I do not allow apps that are sexually explicit or that contain nudity. I do not allow apps that are discriminatory or that contain discriminatory content. The apps should only be for Android Studio."
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="When you submit an app to Freetime App Store, I will first check if the app is for Android. If the app is not for Android, I will not approve the app. If the app is for Android, I will check if the app is free of charge. If the app is not free of charge, I will not approve the app. If the app is free of charge, I will check if the app has In-App-Purchases. If the app has In-App-Purchases, I will check if the app is not a gambling app. If the app is a gambling app, I will not approve the app."
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Make sure your App is Open Source and that you provide a Link to the Source Code Repository when you submit your App to Freetime App Store. If you do not provide a Link to the Source Code Repository, I will not approve the App. Make sure you don't make a Pull Request instead make a Issue. I will not approve the App if you make a Pull Request."
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="I review every app that is submitted to my store. I check for the following: Is the App for Android? Is the App free of charge? Does the App has In-App-Purchases? If the App has In-App-Purchases, I check if the App is not a gambling app. If the App contains Gambling I will not approve the App. Does the App contain any offensive content? If the App contains offensive content I will not approve the App. Does the App contain any hate speech? If the App contains hate speech I will not approve the App. Does the App contain any sexually explicit content? If the App contains sexually explicit content I will not approve the App. Does the App contain any nudity? If the App contains nudity I will not approve the App. Does the App contain any discriminatory content? If the App contains discriminatory content I will not approve the App."
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="If the App passes all these checks, I will rebuild the App from the source code. I do this to ensure that the App is safe to use and does not contain any malicious code. I then fork your Repository and make a Release there where I upload the rebuilded App for People to Download from the Freetime App Store."
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/srccdbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to the Source Code of Freetime App Store" />
     </LinearLayout>
 </ScrollView>

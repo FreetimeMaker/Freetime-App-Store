@@ -19,12 +19,6 @@
             android:orientation="horizontal"
             android:padding="16dp" >
 
-        <ImageView
-            android:id="@+id/backimg"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/back_btn" />
-
             <Button
                 android:id="@+id/backbtn"
                 android:layout_width="100dp"
@@ -35,7 +29,8 @@
                 android:id="@+id/ghlogo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/gh_logo" />
+                android:src="@drawable/gh_logo"
+                android:layout_marginLeft="5dp" />
 
         <TextView
             android:layout_width="150dp"
@@ -44,7 +39,8 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
 
         </LinearLayout>
 

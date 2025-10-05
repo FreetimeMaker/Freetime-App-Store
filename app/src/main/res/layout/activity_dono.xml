@@ -16,61 +16,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/backbtn"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_btn" />
+            android:orientation="horizontal" >
 
-        <ImageView
-            android:id="@+id/DonationLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/donation_logo" />
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:src="@drawable/back_btn"
+                android:text="Go Back to Main Menu" />
+
+            <ImageView
+                android:id="@+id/DonationLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/donation_logo" />
+
+            <TextView
+                android:id="@+id/DonationText"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="Donation" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/DonationText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Donation" />
-
-        <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.0.2" />
+            android:text="Version 1.0.3" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Download Donation" />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Donation is like the Name already says an app where you can Donate" />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Developed by Freetime Maker" />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Permissions: Internet" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/DonationSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View the Source Code of Donation" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -16,61 +16,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/backbtn"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_btn" />
+            android:orientation="horizontal" >
 
-        <ImageView
-            android:id="@+id/FASLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/fas_logo" />
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:src="@drawable/back_btn"
+                android:text="Go Back to Main Menu" />
+
+            <ImageView
+                android:id="@+id/FASLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/fas_logo" />
+
+            <TextView
+                android:id="@+id/FASText"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="Freetime App Store" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/FASText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Freetime App Store" />
-
-        <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/FASVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.0.8" />
+            android:text="Version 1.1.0" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/FASDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Download Freetime App Store" />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/FASDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Freetime App Store is an app where you can find and download various apps from different Publishers." />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/FASDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Developed by Freetime Maker" />
 
         <TextView
+            android:layout_marginTop="16dp"
             android:id="@+id/FASPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Permissions: Internet, Write External Storage, Request Package Install, Access Network State" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/FASSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View the Source Code of Freetime App Store" />
 
         <Button
+            android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

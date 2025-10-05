@@ -114,7 +114,7 @@
 
         <TextView
             android:id="@+id/ghText"
-            android:layout_width="175dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:text="Want to see Your App here?" />
 

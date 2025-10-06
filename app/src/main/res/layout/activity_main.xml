@@ -97,32 +97,88 @@
             android:text="Get more Infos about Freetime App Store" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp">
 
-        <ImageView
-            android:id="@+id/ghLogo"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:src="@drawable/gh_logo" />
+            <ImageView
+                android:id="@+id/CatLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/cat_logo" />
 
-        <TextView
-            android:id="@+id/ghText"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="Want to see Your App here?" />
+            <TextView
+                android:id="@+id/CatText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Cat Clicker" />
 
-        <Button
-            android:id="@+id/ghInfobtn"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:text="Get more Infos about how to get Your App in here?" />
-    </LinearLayout>
-    </LinearLayout>
+            <Button
+                android:id="@+id/catInfobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Get more Infos about Cat Clicker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/plc2Logo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/plc2_logo" />
+
+            <TextView
+                android:id="@+id/plc2Text"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="PLC 2.0" />
+
+            <Button
+                android:id="@+id/plc2Infobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Get more Infos about PLC 2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/ghLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/gh_logo" />
+
+            <TextView
+                android:id="@+id/ghText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Want to see Your App here?" />
+
+            <Button
+                android:id="@+id/ghInfobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Get more Infos about how to get Your App in here?" />
+        </LinearLayout>
+        </LinearLayout>
 </ScrollView>

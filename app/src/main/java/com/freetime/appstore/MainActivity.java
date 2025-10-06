@@ -43,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button catInfobtn = findViewById(R.id.catInfobtn);
+        catInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CatClickerActivity.class);
+            startActivity(intent);
+        });
+
+        Button plc2Infobtn = findViewById(R.id.plc2Infobtn);
+        plc2Infobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PLC2Activity.class);
+            startActivity(intent);
+        });
+
         Button ghInfobtn = findViewById(R.id.ghInfobtn);
         ghInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, GH_Activity.class);

@@ -37,15 +37,27 @@ public class FM_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button donoInfoBtn = findViewById(R.id.donoInfobtn);
-        donoInfoBtn.setOnClickListener(v -> {
+        Button donoInfobtn = findViewById(R.id.donoInfobtn);
+        donoInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, Dono_Activity.class);
             startActivity(intent);
         });
 
-        Button fasInfoBtn = findViewById(R.id.fasInfobtn);
-        fasInfoBtn.setOnClickListener(v -> {
+        Button fasInfobtn = findViewById(R.id.fasInfobtn);
+        fasInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, FAS_Activity.class);
+            startActivity(intent);
+        });
+
+        Button catInfobtn = findViewById(R.id.catInfobtn);
+        catInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, CatClickerActivity.class);
+            startActivity(intent);
+        });
+
+        Button PLC2Infobtn = findViewById(R.id.plc2Infobtn);
+        PLC2Infobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, PLC2Activity.class);
             startActivity(intent);
         });
 

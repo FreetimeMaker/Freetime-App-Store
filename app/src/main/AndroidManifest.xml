@@ -57,6 +57,8 @@
         <activity android:name=".USDC_Activity" />
         <activity android:name=".USDT_Activity" />
         <activity android:name=".GH_Activity" />
+        <activity android:name=".PLC2Activity" />
+        <activity android:name=".CatClickerActivity" />
     </application>
 
 </manifest>

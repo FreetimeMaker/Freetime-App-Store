@@ -29,60 +29,60 @@
                 android:text="Go Back to Main Menu" />
 
             <ImageView
-                android:id="@+id/FASLogo"
+                android:id="@+id/CatLogo"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/fas_logo" />
+                android:src="@drawable/cat_logo" />
 
             <TextView
-                android:id="@+id/FASText"
+                android:id="@+id/CatText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="Freetime App Store" />
+                android:text="Cat Clicker" />
 
         </LinearLayout>
 
         <TextView
             android:layout_marginTop="16dp"
-            android:id="@+id/FASVersion"
+            android:id="@+id/CatVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.1.1" />
+            android:text="Version 1.0.7" />
 
         <Button
             android:layout_marginTop="16dp"
-            android:id="@+id/FASDbtn"
+            android:id="@+id/CatDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download Freetime App Store" />
+            android:text="Download Cat Clicker" />
 
         <TextView
             android:layout_marginTop="16dp"
-            android:id="@+id/FASDesc"
+            android:id="@+id/CatDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Freetime App Store is an app where you can find and download various apps from different Publishers." />
+            android:text="Cat Clicker is a Made With Unity Game where you click on Several Cats in order to get them. Cat Clicker is my 4th Clicker Game I made and in total my 5th Game I made." />
 
         <TextView
             android:layout_marginTop="16dp"
-            android:id="@+id/FASDev"
+            android:id="@+id/CatDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Developed by Freetime Maker" />
 
         <TextView
             android:layout_marginTop="16dp"
-            android:id="@+id/FASPerms"
+            android:id="@+id/CatPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Permissions: Internet, Write External Storage, Request Package Install, Access Network State" />
+            android:text="Permissions: Internet, Write External Storage and I dont know more" />
 
         <Button
             android:layout_marginTop="16dp"
-            android:id="@+id/FASSource"
+            android:id="@+id/CatSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View the Source Code of Freetime App Store" />
+            android:text="View the Source Code of Cat Clicker" />
 
         <Button
             android:layout_marginTop="16dp"

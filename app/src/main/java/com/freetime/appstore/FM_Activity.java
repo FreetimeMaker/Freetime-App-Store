@@ -61,6 +61,12 @@ public class FM_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button cryptoInfobtn = findViewById(R.id.cryptoInfobtn);
+        cryptoInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, CryptoClickerActivity.class);
+            startActivity(intent);
+        });
+
         Button backBtn = findViewById(R.id.backbtn);
         backBtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, MainActivity.class);

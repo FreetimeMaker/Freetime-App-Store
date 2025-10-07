@@ -59,6 +59,7 @@
         <activity android:name=".GH_Activity" />
         <activity android:name=".PLC2Activity" />
         <activity android:name=".CatClickerActivity" />
+        <activity android:name=".CryptoClickerActivity" />
     </application>
 
 </manifest>

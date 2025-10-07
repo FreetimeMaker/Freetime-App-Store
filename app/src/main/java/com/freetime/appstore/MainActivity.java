@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button cryptoInfobtn = findViewById(R.id.cryptoInfobtn);
+        cryptoInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CryptoClickerActivity.class);
+            startActivity(intent);
+        });
+
         Button ghInfobtn = findViewById(R.id.ghInfobtn);
         ghInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, GH_Activity.class);

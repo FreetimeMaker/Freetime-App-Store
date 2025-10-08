@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Freetime App Store</string>
+    <string name="download_text">Herunterladen</string>
+    <string name="gwInfoBTNTXT">Bekomme mehr Infos über GeoWeather</string>
+    <string name="donInfoBTNTXT">Bekomme mehr Infos über Donation</string>
+    <string name="FASBTNTXT">Bekomme mehr Infos über Freetime App Store</string>
+    <string name="catClickerBTNTXT">Bekomme mehr Infos über Cat Clicker</string>
+    <string name="plc2.0BTNTXT">Bekomme mehr Infos über PLC 2.0</string>
+    <string name="ccBTNTXT">Bekomme mehr Infos über Crypto Clicker</string>
+    <string name="GHTXT">Wollen Sie ihre App hier sehen?</string>
+    <string name="GHBTNTXT">Bekomme mehr Infos wie Sie ihre App hier hin bekommen</string>
+    <string name="donoTXTFMA">Unterstütze Freetime Maker</string>
+    <string name="donoBTNTXTFMA">Spende Freetime Maker</string>
+    <string name="backTXTANDbackBTNTXT">Gehe zurück zum Hauptmenu</string>
+    <string name="backToSupportPage">Gehe zurück zur Unterstützungs Seite</string>
+    <string name="catClickerDownBTNTXT">Lade Cat Clicker Herunter</string>
+    <string name="catClickerDescTXT">Cat Clicker ist ein \"Made With Unity\" Spiel wo du auf verschiedene Katzen klickst um sie zu bekommen. Cat Clicker ist mein viertes klickerspiel was ich gemacht habe und im Ganzen mein fünftes Spiel was ich gemacht habe.</string>
+    <string name="FMDevTXT">Hergestellt von Freetime Maker</string>
+    <string name="clickerPermTXT">Berechtigungen: Internet, Externen Speicher Schreiben und mehr weiss ich nicht</string>
+    <string name="catClickerSCBTNTXT">Den Quellcode von Cat Clicker anschauen</string>
+    <string name="MAOFMBTNTXT">Mehr Apps von Freetime Maker</string>
+    <string name="ccDownBTNTXT">Crypto Clicker Herunterladen</string>
+    <string name="ccDescTXT">Crypto Clicker ist ein \"Made With Unity\" Spiel wo man auf verschiedene Cryptowährungen klickt um sie zu bekommen. Crypto Clicker ist mein fünftes Klickerspiel was ich gemacht habe und im ganzen mein sechstes Spiel was ich gemacht habe.</string>
+    <string name="ccSCBTNTXT">Den Quellcode von Crypto Clicker anschauen</string>
+</resources>

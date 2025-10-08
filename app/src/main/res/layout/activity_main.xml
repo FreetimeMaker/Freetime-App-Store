@@ -32,13 +32,13 @@
             android:id="@+id/GeoWeatherText"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="GeoWeather" />
+            android:text="@string/gwNameTXT" />
 
         <Button
             android:id="@+id/gwInfobtn"
             android:layout_width="150dp"
             android:layout_height="75dp"
-            android:text="Get more Infos about GeoWeather" />
+            android:text="@string/gwInfoBTNTXT" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,13 +60,13 @@
             android:id="@+id/DonationText"
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="Donation" />
+            android:text="@string/donNameTXT" />
 
         <Button
             android:id="@+id/donoInfobtn"
             android:layout_width="150dp"
             android:layout_height="75dp"
-            android:text="Get more Infos about Donation" />
+            android:text="@string/donInfoBTNTXT" />
     </LinearLayout>
 
     <LinearLayout
@@ -88,13 +88,13 @@
             android:id="@+id/fasText"
             android:layout_width="121dp"
             android:layout_height="50dp"
-            android:text="Freetime App Store" />
+            android:text="@string/FASTXT" />
 
         <Button
             android:id="@+id/fasInfobtn"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:text="Get more Infos about Freetime App Store" />
+            android:text="@string/FASBTNTXT" />
     </LinearLayout>
 
         <LinearLayout
@@ -116,13 +116,13 @@
                 android:id="@+id/CatText"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="Cat Clicker" />
+                android:text="@string/catClickerTXT" />
 
             <Button
                 android:id="@+id/catInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="Get more Infos about Cat Clicker" />
+                android:text="@string/catClickerBTNTXT" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,13 +144,13 @@
                 android:id="@+id/plc2Text"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="PLC 2.0" />
+                android:text="@string/plc2.0TXT" />
 
             <Button
                 android:id="@+id/plc2Infobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="Get more Infos about PLC 2.0" />
+                android:text="@string/plc2.0BTNTXT" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,13 +172,13 @@
                 android:id="@+id/ccText"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="Crypto Clicker" />
+                android:text="@string/ccTXT" />
 
             <Button
                 android:id="@+id/cryptoInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="Get more Infos about Crypto Clicker" />
+                android:text="@string/ccBTNTXT" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,13 +200,13 @@
                 android:id="@+id/ghText"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="Want to see Your App here?" />
+                android:text="@string/GHTXT" />
 
             <Button
                 android:id="@+id/ghInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="Get more Infos about how to get Your App in here?" />
+                android:text="@string/GHBTNTXT" />
         </LinearLayout>
         </LinearLayout>
 </ScrollView>

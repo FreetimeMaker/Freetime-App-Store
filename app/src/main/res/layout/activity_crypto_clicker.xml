@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="Go Back to Main Menu" />
+                android:text="@string/backTXTANDbackBTNTXT" />
 
             <ImageView
                 android:id="@+id/CryptoLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/CryptoText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="Crypto Clicker" />
+                android:text="@string/ccTXT" />
 
         </LinearLayout>
 
@@ -47,48 +47,48 @@
             android:id="@+id/CryptoVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.0.0" />
+            android:text="@string/ccVTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download Crypto Clicker" />
+            android:text="@string/ccDownBTNTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Crypto Clicker is a Made With Unity Game where you click on Several Cryptocurrencies in order to get them. Crypto Clicker is my 5th Clicker Game I made and in total my 6th Game I made." />
+            android:text="@string/ccDescTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developed by Freetime Maker" />
+            android:text="@string/FMDevTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Permissions: Internet, Write External Storage and I dont know more" />
+            android:text="@string/clickerPermTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View the Source Code of Crypto Clicker" />
+            android:text="@string/ccSCBTNTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="More Apps by Freetime Maker" />
+            android:text="@string/MAOFMBTNTXT" />
     </LinearLayout>
 </ScrollView>

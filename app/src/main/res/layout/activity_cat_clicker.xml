@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="Go Back to Main Menu" />
+                android:text="@string/backTXTANDbackBTNTXT" />
 
             <ImageView
                 android:id="@+id/CatLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/CatText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="Cat Clicker" />
+                android:text="@string/catClickerTXT" />
 
         </LinearLayout>
 
@@ -47,48 +47,48 @@
             android:id="@+id/CatVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.0.7" />
+            android:text="@string/catClickerVersionTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/CatDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download Cat Clicker" />
+            android:text="@string/catClickerDownBTNTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cat Clicker is a Made With Unity Game where you click on Several Cats in order to get them. Cat Clicker is my 4th Clicker Game I made and in total my 5th Game I made." />
+            android:text="@string/catClickerDescTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developed by Freetime Maker" />
+            android:text="@string/FMDevTXT" />
 
         <TextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Permissions: Internet, Write External Storage and I dont know more" />
+            android:text="@string/clickerPermTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/CatSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View the Source Code of Cat Clicker" />
+            android:text="@string/catClickerSCBTNTXT" />
 
         <Button
             android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="More Apps by Freetime Maker" />
+            android:text="@string/MAOFMBTNTXT" />
     </LinearLayout>
 </ScrollView>

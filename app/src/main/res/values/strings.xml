@@ -1,4 +1,33 @@
 <resources>
     <string name="app_name">Freetime App Store</string>
     <string name="download_text">Download</string>
+    <string name="gwInfoBTNTXT">Get more Infos about GeoWeather</string>
+    <string name="gwNameTXT" translatable="false">GeoWeather</string>
+    <string name="donNameTXT" translatable="false">Donation</string>
+    <string name="donInfoBTNTXT">Get more Infos about Donation</string>
+    <string name="FASTXT" translatable="false">Freetime App Store</string>
+    <string name="FASBTNTXT">Get more Infos about Freetime App Store</string>
+    <string name="catClickerTXT" translatable="false">Cat Clicker</string>
+    <string name="catClickerBTNTXT">Get more Infos about Cat Clicker</string>
+    <string name="plc2.0TXT" translatable="false">PLC 2.0</string>
+    <string name="plc2.0BTNTXT">Get more Infos about PLC 2.0</string>
+    <string name="ccTXT" translatable="false">Crypto Clicker</string>
+    <string name="ccBTNTXT">Get more Infos about Crypto Clicker</string>
+    <string name="GHTXT">Want to see Your App here?</string>
+    <string name="GHBTNTXT">Get more Infos on how to get Your App in here</string>
+    <string name="donoTXTFMA">Support Freetime Maker</string>
+    <string name="donoBTNTXTFMA">Donate to Freetime Maker</string>
+    <string name="backTXTANDbackBTNTXT">Go Back to Main Menu</string>
+    <string name="backToSupportPage">Go Back to the Support Page</string>
+    <string name="catClickerVersionTXT" translatable="false">Version: 1.0.7</string>
+    <string name="catClickerDownBTNTXT">Download Cat Clicker</string>
+    <string name="catClickerDescTXT">Cat Clicker is a \"Made With Unity\" Game where you click on Several Cats in order to get them. Cat Clicker is my 4th Clicker Game I made and in total my 5th Game I made.</string>
+    <string name="FMDevTXT">Developed by Freetime Maker</string>
+    <string name="clickerPermTXT">Permissions: Internet, Write External Storage and I dont know more</string>
+    <string name="catClickerSCBTNTXT">View the Source Code of Cat Clicker</string>
+    <string name="MAOFMBTNTXT">More Apps by Freetime Maker</string>
+    <string name="ccVTXT" translatable="false">Version: 1.0.0</string>
+    <string name="ccDownBTNTXT">Download Crypto Clicker</string>
+    <string name="ccDescTXT">Crypto Clicker is a \"Made With Unity\" Game where you click on Several Cryptocurrencies in order to get them. Crypto Clicker is my 5th Clicker Game I made and in total my 6th Game I made.</string>
+    <string name="ccSCBTNTXT">View the Source Code of Crypto Clicker</string>
 </resources>

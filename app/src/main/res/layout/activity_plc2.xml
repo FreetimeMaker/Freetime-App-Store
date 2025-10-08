@@ -89,6 +89,6 @@
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="More Apps by Freetime Maker" />
+            android:text="@string/MAOFMBTNTXT" />
     </LinearLayout>
 </ScrollView>

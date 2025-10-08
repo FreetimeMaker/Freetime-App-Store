@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="Go Back to Main Menu" />
+                android:text="@string/backTXTANDbackBTNTXT" />
 
             <ImageView
                 android:id="@+id/DonationLogo"
@@ -89,6 +89,6 @@
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="More Apps by Freetime Maker" />
+            android:text="@string/MAOFMBTNTXT" />
     </LinearLayout>
 </ScrollView>

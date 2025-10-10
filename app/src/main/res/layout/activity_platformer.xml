@@ -29,60 +29,53 @@
                 android:text="@string/backTXTANDbackBTNTXT" />
 
             <ImageView
-                android:id="@+id/DonationLogo"
+                android:id="@+id/platLogo"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/donation_logo" />
+                android:src="@drawable/platformer_logo" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/DonationText"
+                android:id="@+id/platText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/donNameTXT" />
+                android:text="@string/PlatNameTXT" />
 
         </LinearLayout>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/DonationVersion"
+            android:id="@+id/platVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donVersionTXT" />
+            android:text="@string/PlatVersionTXT" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
-            android:id="@+id/DonationDbtn"
+            android:id="@+id/platDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donDownBTNTXT" />
+            android:text="@string/PlatDownBTNTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/DonationDesc"
+            android:id="@+id/platDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donDescTXT" />
+            android:text="@string/PlatDescTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/DonationDev"
+            android:id="@+id/platDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/FMDevTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/DonationPerms"
+            android:id="@+id/platPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donPermTXT" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_marginTop="16dp"
-            android:id="@+id/DonationSource"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/donSCBTNTXT" />
+            android:text="@string/PlatPermTXT" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

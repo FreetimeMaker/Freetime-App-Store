@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/backbtn"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
@@ -34,57 +34,57 @@
                 android:layout_height="55dp"
                 android:src="@drawable/geoweather_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/GeoWeatherText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="GeoWeather" />
+                android:text="@string/GWNameTXT" />
 
         </LinearLayout>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/GeoWeatherVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version 1.0.3" />
+            android:text="@string/GWVersionTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/GWDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download GeoWeather" />
+            android:text="@string/GWDownBTNTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/GeoWeatherDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GeoWeather is a Simple Weather App that shows you the Weather in the City or Location you provided." />
+            android:text="@string/GWDescTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/GeoWeatherDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developed by Freetime Maker" />
+            android:text="@string/FMDevTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/GeoWeatherPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Permissions: Location, Internet" />
+            android:text="@string/GWPermTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/GWSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View the Source Code of GeoWeather" />
+            android:text="@string/GWSCBTNTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"

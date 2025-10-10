@@ -24,13 +24,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/fas_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/FM"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/donoTXTFMA" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/fmDonobtn"
                 android:layout_width="150dp"
                 android:layout_height="75dp"
@@ -49,13 +49,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/geoweather_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/GeoWeatherText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/gwNameTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/gwInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
@@ -73,13 +73,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/donation_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/DonoTXT"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/donNameTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/donoInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
@@ -97,13 +97,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/fas_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/fasText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/FASTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/fasInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
@@ -121,13 +121,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/cat_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/catText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/catClickerTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/catInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
@@ -145,17 +145,65 @@
                 android:layout_height="55dp"
                 android:src="@drawable/plc2_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/plc2Text"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/plc2.0TXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/plc2Infobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:text="@string/plc2.0BTNTXT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/platLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/platformer_logo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/platText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/PlatNameTXT" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/platInfobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="@string/platInfoBTNTXT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/osLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/os_logo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/osText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/osNameTXT" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/osInfobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="@string/osInfoBTNTXT" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,13 +217,13 @@
                 android:layout_height="55dp"
                 android:src="@drawable/crypto_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/ccText"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
                 android:text="@string/ccTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/cryptoInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
@@ -193,12 +241,12 @@
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:text="@string/backTXTANDbackBTNTXT" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/backbtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"

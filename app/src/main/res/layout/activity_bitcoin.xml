@@ -17,6 +17,6 @@
         android:id="@+id/btnGoBack"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/backToSupportPage"
+        android:text="@string/backToFMSupportPage"
         android:textColor="#FFFFFF"/>
 </LinearLayout>

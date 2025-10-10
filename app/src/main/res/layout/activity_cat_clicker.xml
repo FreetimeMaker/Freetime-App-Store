@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/backbtn"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
@@ -34,7 +34,7 @@
                 android:layout_height="55dp"
                 android:src="@drawable/cat_logo" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/CatText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
@@ -42,49 +42,49 @@
 
         </LinearLayout>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/catClickerVersionTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/CatDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/catClickerDownBTNTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/catClickerDescTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/FMDevTXT" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/CatPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/clickerPermTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/CatSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/catClickerSCBTNTXT" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/MAOFM"
             android:layout_width="wrap_content"

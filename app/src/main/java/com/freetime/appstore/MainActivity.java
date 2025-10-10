@@ -1,5 +1,7 @@
 package com.freetime.appstore;
 
+import static com.freetime.appstore.R.*;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -52,6 +54,18 @@ public class MainActivity extends AppCompatActivity {
         Button plc2Infobtn = findViewById(R.id.plc2Infobtn);
         plc2Infobtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, PLC2Activity.class);
+            startActivity(intent);
+        });
+
+        Button platInfobtn = findViewById(R.id.platInfobtn);
+        platInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PlatformerActivity.class);
+            startActivity(intent);
+        });
+
+        Button osInfobtn = findViewById(R.id.osInfobtn);
+        osInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, OS_Activity.class);
             startActivity(intent);
         });
 

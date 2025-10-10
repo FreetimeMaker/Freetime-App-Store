@@ -18,6 +18,9 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
+        <activity
+            android:name=".OS_Activity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -60,6 +63,7 @@
         <activity android:name=".PLC2Activity" />
         <activity android:name=".CatClickerActivity" />
         <activity android:name=".CryptoClickerActivity" />
+        <activity android:name=".PlatformerActivity" />
     </application>
 
 </manifest>

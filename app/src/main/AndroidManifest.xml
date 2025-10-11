@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FreetimeAppStore">
         <activity
-            android:name=".OS_Activity"
+            android:name=".PLC_Activity"
             android:exported="false" />
 
         <provider
@@ -64,6 +64,7 @@
         <activity android:name=".CatClickerActivity" />
         <activity android:name=".CryptoClickerActivity" />
         <activity android:name=".PlatformerActivity" />
+        <activity android:name=".OS_Activity" />
     </application>
 
 </manifest>

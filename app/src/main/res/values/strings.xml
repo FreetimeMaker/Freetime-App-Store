@@ -82,4 +82,6 @@
     <string name="osDescTXT">OS Clicker is a \"Made With Unity\" Game where you click on Several Operating Systems in order to get them. OS Clicker is my 5th Clicker Game I made and in total my 6th Game I made.</string>
     <string name="osInfoBTNTXT">Get more Infos about OS Clicker</string>
     <string name="platInfoBTNTXT">Get more Infos about 2D Platformer</string>
+    <string name="plcNameTXT" translatable="false">Programming Language Clicker</string>
+    <string name="plcVersionTXT" translatable="false">Version: 1.0.4</string>
 </resources>

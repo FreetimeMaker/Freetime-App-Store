@@ -38,7 +38,7 @@
                 android:id="@+id/PLC2Text"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="PLC 2.0" />
+                android:text="@string/plc2.0TXT" />
 
         </LinearLayout>
 
@@ -47,21 +47,21 @@
             android:id="@+id/PLC2Version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Version: 1.0.3" />
+            android:text="@string/plc2.0VersionTXT" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/PLC2Dbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download PLC 2.0" />
+            android:text="@string/plc2.0DownBTNTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/PLC2Desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PLC 2.0 is a Made With Unity Game where you click on Several Programming Languages in order to get them. PLC 2.0 is my 2nd Clicker Game I made and in total my 3rd Game I made." />
+            android:text="@string/plc2.0DescTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
@@ -82,7 +82,7 @@
             android:id="@+id/PLC2Source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View the Source Code of PLC 2.0" />
+            android:text="@string/plc2.0SCBTNTXT" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

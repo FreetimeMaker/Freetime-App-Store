@@ -29,13 +29,13 @@
                 android:text="@string/backTXTANDbackBTNTXT" />
 
             <ImageView
-                android:id="@+id/PLC2Logo"
+                android:id="@+id/PLCLogo"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:src="@drawable/plc_logo" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/PLC2Text"
+                android:id="@+id/PLCText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:text="@string/plcNameTXT" />
@@ -44,35 +44,35 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/PLC2Version"
+            android:id="@+id/PLCVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="@string/plcVersionTXT" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
-            android:id="@+id/PLC2Dbtn"
+            android:id="@+id/PLCDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Download PLC" />
+            android:text="@string/plcDownBTNTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/PLC2Desc"
+            android:id="@+id/PLCDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PLC is a Made With Unity Game where you click on Several Programming Languages in order to get them. PLC is my 1st Clicker Game I made and in total my 2nd Game I made." />
+            android:text="@string/plcDescTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/PLC2Dev"
+            android:id="@+id/PLCDev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/FMDevTXT" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
-            android:id="@+id/PLC2Perms"
+            android:id="@+id/PLCPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/clickerPermTXT" />

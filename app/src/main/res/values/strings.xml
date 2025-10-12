@@ -84,4 +84,11 @@
     <string name="platInfoBTNTXT">Get more Infos about 2D Platformer</string>
     <string name="plcNameTXT" translatable="false">Programming Language Clicker</string>
     <string name="plcVersionTXT" translatable="false">Version: 1.0.4</string>
+    <string name="plcDownBTNTXT">Download PLC</string>
+    <string name="plcDescTXT">PLC is a \"Made With Unity\" Game where you click on Several Programming Languages in order to get them. PLC is my 1st Clicker Game I made and in total my 2nd Game I made.</string>
+    <string name="plc2.0VersionTXT" translatable="false">Version: 1.0.3</string>
+    <string name="plc2.0DownBTNTXT">Download PLC 2.0</string>
+    <string name="plc2.0DescTXT">PLC 2.0 is a \"Made With Unity\" Game where you click on Several Programming Languages in order to get them. PLC 2.0 is my 2nd Clicker Game I made and in total my 3rd Game I made.</string>
+    <string name="plc2.0SCBTNTXT">View the Source Code of PLC 2.0</string>
+    <string name="plcInfoBTNTXT">Get more Infos about PLC</string>
 </resources>

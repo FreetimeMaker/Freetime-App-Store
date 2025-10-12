@@ -55,6 +55,12 @@ public class FM_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button PLCInfobtn = findViewById(R.id.plcInfobtn);
+        PLCInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, PLC2Activity.class);
+            startActivity(intent);
+        });
+
         Button PLC2Infobtn = findViewById(R.id.plc2Infobtn);
         PLC2Infobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, PLC2Activity.class);

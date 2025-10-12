@@ -51,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button PLCInfobtn = findViewById(R.id.PLCInfobtn);
+        PLCInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CatClickerActivity.class);
+            startActivity(intent);
+        });
+
         Button plc2Infobtn = findViewById(R.id.plc2Infobtn);
         plc2Infobtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, PLC2Activity.class);

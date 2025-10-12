@@ -66,4 +66,10 @@
     <string name="osDescTXT">OS Clicker ist ein \"Made With Unity\" Spiel wo Sie auf verschiedene Betriebssysteme klicken um sie zu erhalten. OS Clicker ist mein fünftes Klicker Spiel was ich gemacht habe und im ganzen mein sechstes Spiel was ich gemmacht habe.</string>
     <string name="osInfoBTNTXT">Bekomme mehr Infos über OS Clicker</string>
     <string name="platInfoBTNTXT">Bekomme mehr Infos über 2D Platformer</string>
+    <string name="plcDownBTNTXT">PLC herunterladen</string>
+    <string name="plcDescTXT">PLC ist ein \"Made With Unity\" Spiel wo man auf verschiedene Programmiersprachen klickt um sie zu bekommenn. PLC ist mein erstes Klickerspiel was ich gemacht habe und im ganzen mein zweites Spiel was ich gemacht habe.</string>
+    <string name="plc2.0DownBTNTXT">PLC 2.0 herunterladen</string>
+    <string name="plc2.0DescTXT">PLC 2.0 ist ein \"Made With Unity\" Spiel wo man auf verschiedene Programmiersprachen klickt um sie zu bekommen. PLC 2.0 ist mein zweites Klickerspiel was ich gemacht habe und im ganzen mein drittes Spiel was ich gemacht habe.</string>
+    <string name="plc2.0SCBTNTXT">Den Quellcode von PLC 2.0 anschauen</string>
+    <string name="plcInfoBTNTXT">Bekomme mehr Infos über PLC</string>
 </resources>

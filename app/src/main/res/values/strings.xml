@@ -36,7 +36,7 @@
     <string name="donPermTXT">Permissions: Internet</string>
     <string name="donSCBTNTXT">View the Source Code of Donation</string>
     <string name="FASNameTXT" translatable="false">Freetime App Store</string>
-    <string name="FASVTXT" translatable="false">Version: 1.1.3</string>
+    <string name="FASVTXT" translatable="false">Version: 1.1.5</string>
     <string name="FASDownBTNTXT">Download Freetime App Store</string>
     <string name="FASDescTXT">Freetime App Store is an App Store where you can find and download various apps from different Publishers.</string>
     <string name="FASPermTXT">Permissions: Internet, Write External Storage, Request Package Install, Access Network State</string>

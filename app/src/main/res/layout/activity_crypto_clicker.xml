@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/CryptoLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/CryptoText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/ccTXT" />
+                android:text="Crypto Clicker" />
 
         </LinearLayout>
 
@@ -47,14 +47,14 @@
             android:id="@+id/CryptoVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ccVTXT" />
+            android:text="Version: 1.0.0" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/CryptoDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ccDownBTNTXT" />
+            android:text="Download Crypto Clicker" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
@@ -82,7 +82,7 @@
             android:id="@+id/CryptoSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ccSCBTNTXT" />
+            android:text="View the Source Code of Crypto Clicker" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
-    tools:context=".CatClickerActivity">
+    tools:context=".DE_CatClickerActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -42,7 +42,7 @@
                     android:layout_width="150dp"
                     android:layout_height="55dp"
                     android:src="@drawable/back_btn"
-                    android:text="@string/backToMABTNTXT" />
+                    android:text="@string/backToMADEBTNTXT" />
 
                 <ImageView
                     android:id="@+id/CatLogo"
@@ -70,42 +70,42 @@
                 android:id="@+id/CatDbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Download Cat Clicker" />
+                android:text="Lade Cat Clicker herunter" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginTop="16dp"
                 android:id="@+id/CatDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/catClickerDescTXT" />
+                android:text="@string/catClickerDEDescTXT" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginTop="16dp"
                 android:id="@+id/CatDev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/FMDevTXT" />
+                android:text="@string/FMDevDETXT" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginTop="16dp"
                 android:id="@+id/CatPerms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/clickerPermTXT" />
+                android:text="@string/clickerPermDETXT" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_marginTop="16dp"
                 android:id="@+id/CatSource"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View the Source Code of Cat Clicker" />
+                android:text="Den Quellcode von Cat Clicker anschauen" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_marginTop="16dp"
                 android:id="@+id/MAOFM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/MAOFMBTNTXT" />
+                android:text="@string/MAOFMDEBTNTXT" />
         </LinearLayout>
         </ScrollView>
     </FrameLayout>

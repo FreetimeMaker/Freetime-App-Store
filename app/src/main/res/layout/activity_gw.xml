@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/GeoWeatherLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/GeoWeatherText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/GWNameTXT" />
+                android:text="GeoWeather" />
 
         </LinearLayout>
 
@@ -47,21 +47,21 @@
             android:id="@+id/GeoWeatherVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/GWVersionTXT" />
+            android:text="Version: 1.0.3" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/GWDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/GWDownBTNTXT" />
+            android:text="Download GeoWeather" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/GeoWeatherDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/GWDescTXT" />
+            android:text="GeoWeather is a Simple Weather App that shows you the Weather for the City or Location you provided." />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
@@ -75,14 +75,14 @@
             android:id="@+id/GeoWeatherPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/GWPermTXT" />
+            android:text="Permissions: Location, Internet" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/GWSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/GWSCBTNTXT" />
+            android:text="Go to the Source Code of GeoWeather" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

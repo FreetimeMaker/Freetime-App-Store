@@ -41,8 +41,8 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/gwInfobtn"
                     android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:text="Get more Infos about GeoWeather" />
+                    android:layout_height="100dp"
+                    android:text="Bekommen Sie mehr Infos über GeoWeather" />
             </LinearLayout>
 
             <LinearLayout
@@ -69,8 +69,8 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/donoInfobtn"
                     android:layout_width="150dp"
-                    android:layout_height="75dp"
-                    android:text="Get more Infos about Donation" />
+                    android:layout_height="100dp"
+                    android:text="Bekommen Sie mehr Infos über Donation" />
             </LinearLayout>
 
             <LinearLayout
@@ -97,8 +97,8 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/fasInfobtn"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:text="Get more Infos about Freetime App Store" />
+                    android:layout_height="125dp"
+                    android:text="Bekommen Sie mehr Infos über Freetime App Store" />
             </LinearLayout>
 
             <LinearLayout
@@ -125,8 +125,8 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/catInfobtn"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:text="Get more Infos about Cat Clicker" />
+                    android:layout_height="125dp"
+                    android:text="Bekommen Sie mehr Infos über Cat Clicker" />
             </LinearLayout>
 
             <LinearLayout
@@ -153,8 +153,8 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/PLCInfobtn"
                     android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:text="Get more Infos about Programming Language Clicker" />
+                    android:layout_height="125dp"
+                    android:text="Bekommen Sie mehr Infos über Programming Language Clicker" />
             </LinearLayout>
 
             <LinearLayout
@@ -182,7 +182,7 @@
                     android:id="@+id/plc2Infobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Get more Infos about PLC 2.0" />
+                    android:text="Bekommen Sie mehr Infos über PLC 2.0" />
             </LinearLayout>
 
             <LinearLayout
@@ -210,7 +210,7 @@
                     android:id="@+id/platInfobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Get more Infos about 2D Platformer" />
+                    android:text="Bekommmen Sie mehr Infos über 2D Platformer" />
             </LinearLayout>
 
             <LinearLayout
@@ -238,7 +238,7 @@
                     android:id="@+id/osInfobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Get more Infos about OS Clicker" />
+                    android:text="Bekommen Sie mehr Infos über OS Clicker" />
             </LinearLayout>
 
             <LinearLayout
@@ -266,7 +266,7 @@
                     android:id="@+id/cryptoInfobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Get more Infos about Crypto Clicker" />
+                    android:text="Bekommen Sie mehr Infos über Crypto Clicker" />
             </LinearLayout>
 
             <LinearLayout
@@ -288,13 +288,13 @@
                     android:id="@+id/ghText"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
-                    android:text="Want to see Your App here?" />
+                    android:text="Willen Sie ihre App hier sehen?" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/ghInfobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Get more Infos on how to get Your App in here" />
+                    android:text="Bekommen Sie mehr Infos wie Ihre App hier erscheint" />
             </LinearLayout>
 
             <LinearLayout
@@ -307,22 +307,22 @@
                 android:layout_marginTop="16dp">
 
                 <ImageView
-                    android:id="@+id/deLogo"
+                    android:id="@+id/enLogo"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
-                    android:src="@drawable/crypto_logo" />
+                    android:src="@drawable/platformer_logo" />
 
                 <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/deText"
+                    android:id="@+id/enText"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
-                    android:text="Go to the German Version of Freetime App Store" />
+                    android:text="Gehen Sie zur Englischen Version Freetime App Store" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/deInfobtn"
+                    android:id="@+id/enInfobtn"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:text="Go to the German Version" />
+                    android:text="Gehen Sie zur Englischen Version" />
             </LinearLayout>
 
         </LinearLayout>

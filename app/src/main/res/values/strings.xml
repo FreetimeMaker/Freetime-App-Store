@@ -1,94 +1,23 @@
 <resources>
     <string name="app_name">Freetime App Store</string>
-    <string name="download_text">Download</string>
-    <string name="gwInfoBTNTXT">Get more Infos about GeoWeather</string>
-    <string name="gwNameTXT" translatable="false">GeoWeather</string>
-    <string name="donNameTXT" translatable="false">Donation</string>
-    <string name="donInfoBTNTXT">Get more Infos about Donation</string>
-    <string name="FASTXT" translatable="false">Freetime App Store</string>
-    <string name="FASBTNTXT">Get more Infos about Freetime App Store</string>
-    <string name="catClickerTXT" translatable="false">Cat Clicker</string>
-    <string name="catClickerBTNTXT">Get more Infos about Cat Clicker</string>
-    <string name="plc2.0TXT" translatable="false">PLC 2.0</string>
-    <string name="plc2.0BTNTXT">Get more Infos about PLC 2.0</string>
-    <string name="ccTXT" translatable="false">Crypto Clicker</string>
-    <string name="ccBTNTXT">Get more Infos about Crypto Clicker</string>
-    <string name="GHTXT">Want to see Your App here?</string>
-    <string name="GHBTNTXT">Get more Infos on how to get Your App in here</string>
-    <string name="donoTXTFMA">Support Freetime Maker</string>
-    <string name="donoBTNTXTFMA">Donate to Freetime Maker</string>
-    <string name="backTXTANDbackBTNTXT">Go Back to Main Menu</string>
-    <string name="backToFMSupportPage">Go Back to the Support of Freetime Maker Page</string>
-    <string name="catClickerVersionTXT" translatable="false">Version: 1.0.7</string>
-    <string name="catClickerDownBTNTXT">Download Cat Clicker</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="catClickerDescTXT">Cat Clicker is a \"Made With Unity\" Game where you click on Several Cats in order to get them. Cat Clicker is my 4th Clicker Game I made and in total my 5th Game I made.</string>
-    <string name="FMDevTXT">Developed by Freetime Maker</string>
+    <string name="backToMABTNTXT">Go Back to Main Activity</string>
+    <string name="FMDevTXT">Made by Freetime Maker</string>
+    <string name="MAOFMBTNTXT">More Apps and Games by Freetime Maker</string>
     <string name="clickerPermTXT">Permissions: Internet, Write External Storage and I dont know more</string>
-    <string name="catClickerSCBTNTXT">View the Source Code of Cat Clicker</string>
-    <string name="MAOFMBTNTXT">More Apps by Freetime Maker</string>
-    <string name="ccVTXT" translatable="false">Version: 1.0.0</string>
-    <string name="ccDownBTNTXT">Download Crypto Clicker</string>
     <string name="ccDescTXT">Crypto Clicker is a \"Made With Unity\" Game where you click on Several Cryptocurrencies in order to get them. Crypto Clicker is my 6th Clicker Game I made and in total my 7th Game I made.</string>
-    <string name="ccSCBTNTXT">View the Source Code of Crypto Clicker</string>
-    <string name="donVersionTXT" translatable="false">Version: 1.0.3</string>
-    <string name="donDownBTNTXT">Download Donation</string>
-    <string name="donDescTXT">Donation is like the Name already says an app where you can Donate.</string>
-    <string name="donPermTXT">Permissions: Internet</string>
-    <string name="donSCBTNTXT">View the Source Code of Donation</string>
-    <string name="FASNameTXT" translatable="false">Freetime App Store</string>
-    <string name="FASVTXT" translatable="false">Version: 1.1.5</string>
-    <string name="FASDownBTNTXT">Download Freetime App Store</string>
-    <string name="FASDescTXT">Freetime App Store is an App Store where you can find and download various apps from different Publishers.</string>
-    <string name="FASPermTXT">Permissions: Internet, Write External Storage, Request Package Install, Access Network State</string>
-    <string name="FASSCBTNTXT">View the Source Code of Freetime App Store</string>
-    <string name="GHNameTXT">Learn how your App gets Approved on Freetime App Store</string>
-    <string name="GHFirstDesc">Freetime App Store is a one Person driven App Store. I review and rebuild every app that is submitted to my Store. I do not allow Apps that are offensive or that contain hate speech. I do not allow Apps that have In-App-Purchases in it. I do not allow Apps that are sexually explicit or that contain nudity. I do not allow Apps that are discriminatory or that contain discriminatory content. The Apps should only be for Android.</string>
-    <string name="GHFASSCBTNTXT">Go to the Source Code of Freetime App Store</string>
-    <string name="GWNameTXT" translatable="false">GeoWeather</string>
-    <string name="GWVersionTXT" translatable="false">Version: 1.0.3</string>
-    <string name="GWDownBTNTXT">Download GeoWeather</string>
-    <string name="GWDescTXT">GeoWeather is a Simple Weather App that shows you the Weather for the City or Location you provided.</string>
-    <string name="GWPermTXT">Permissions: Location, Internet</string>
-    <string name="GWSCBTNTXT">View the Source Code of GeoWeather</string>
-    <string name="FMDonoTXT1">Support the work of Freetime Maker</string>
-    <string name="FMDonoTXT2">Freetime Maker would be happy about a little support</string>
-    <string name="FMOxaPayDonoBTNTXT">Donate via OxaPay</string>
-    <string name="FMCoinDonoBTNTXT">Donate via Coinbase</string>
-    <string name="FMBTCDonoBTNTXT">Donate Bitcoin</string>
-    <string name="FMETHDonoBTNTXT">Donate Ethereum</string>
-    <string name="FMUSDTDonoBTNTXT">Donate Tether/USDT</string>
-    <string name="FMUSDCDonoBTNTXT">Donate USDC</string>
-    <string name="FMSHIBDonoBTNTXT">Donate SHIB</string>
-    <string name="FMDogeDonoBTNTXT">Donate Dogecoin</string>
-    <string name="FMTRXDonoBTNTXT">Donate Tron</string>
-    <string name="FMLTCDonoBTNTXT">Donate Litecoin</string>
-    <string name="FMBNBDonoBTNTXT">Donate BNB</string>
-    <string name="FMSOLDonoBTNTXT">Donate Solana</string>
-    <string name="FMPEPEDonoBTNTXT">Donate PEPE</string>
-    <string name="BackToFM">Go Back to Freetime Maker</string>
-    <string name="GHSecondDesc">When you submit an App to Freetime App Store, I will first check if the App is for Android. If the App is not for Android, I will not approve the App. If the App is for Android, I will check if the App is free of charge. If the App is not free of charge, I will not approve the App. If the App is free of charge, I will check if the App has In-App-Purchases. If the App has In-App-Purchases, I will check if the App is not a gambling App. If the App is a gambling App, I will not approve the App.</string>
-    <string name="GHThirdDesc">Make sure your App is Open Source and that you provide a Link to the Source Code when you submit your App to Freetime App Store. If you do not provide a Link to the Source Code, I will not approve the App. Make sure you don\'t make a Pull Request instead make a Issue. I will not approve the App if you make a Pull Request.</string>
-    <string name="GHFourthDesc">I review every App that is submitted to my Store. I check for the following: Is the App for Android? Is the App free of charge? Does the App has In-App-Purchases? If the App has In-App-Purchases, I check if the App is not a gambling app. If the App contains Gambling I will not approve the App. Does the App contain any offensive content? If the App contains offensive content I will not approve the App. Does the App contain any hate speech? If the App contains hate speech I will not approve the App. Does the App contain any sexually explicit content? If the App contains sexually explicit content I will not approve the App. Does the App contain any nudity? If the App contains nudity I will not approve the App. Does the App contain any discriminatory content? If the App contains discriminatory content I will not approve the App.</string>
-    <string name="GHFifthDesc">Please check all of the Above Things before submitting your App to Freetime App Store. It will cost less Time for you and me.</string>
-    <string name="GHSixthDesc">If the App passes all these checks, I will rebuild the App from the source code. I do this to ensure that the App is safe to use and does not contain any malicious code. I then use the latest Release provided by you from your Repository for Users to Download from the Freetime App Store.</string>
-    <string name="PlatNameTXT" translatable="false">2D Platformer</string>
-    <string name="PlatVersionTXT" translatable="false">Version: 1.0.8</string>
-    <string name="PlatDownBTNTXT">Download 2D Platformer</string>
+    <string name="osDescTXT">OS Clicker is a \"Made With Unity\" Game where you click on Several Operating Systems in order to get them. OS Clicker is my 5th Clicker Game I made and in total my 6th Game I made.</string>
     <string name="PlatDescTXT">2D Platformer is a 2D \"Made With Unity\" Game where you have Serveral Levels to Conquer.</string>
     <string name="PlatPermTXT">Permissions: Internet, Write External Storage and I dont know more</string>
-    <string name="osNameTXT" translatable="false">OS Clicker</string>
-    <string name="osVersionTXT" translatable="false">Version: 1.0.0</string>
-    <string name="osDownBTNTXT">Download OS Clicker</string>
-    <string name="osDescTXT">OS Clicker is a \"Made With Unity\" Game where you click on Several Operating Systems in order to get them. OS Clicker is my 5th Clicker Game I made and in total my 6th Game I made.</string>
-    <string name="osInfoBTNTXT">Get more Infos about OS Clicker</string>
-    <string name="platInfoBTNTXT">Get more Infos about 2D Platformer</string>
-    <string name="plcNameTXT" translatable="false">Programming Language Clicker</string>
-    <string name="plcVersionTXT" translatable="false">Version: 1.0.4</string>
-    <string name="plcDownBTNTXT">Download PLC</string>
     <string name="plcDescTXT">PLC is a \"Made With Unity\" Game where you click on Several Programming Languages in order to get them. PLC is my 1st Clicker Game I made and in total my 2nd Game I made.</string>
-    <string name="plc2.0VersionTXT" translatable="false">Version: 1.0.3</string>
-    <string name="plc2.0DownBTNTXT">Download PLC 2.0</string>
     <string name="plc2.0DescTXT">PLC 2.0 is a \"Made With Unity\" Game where you click on Several Programming Languages in order to get them. PLC 2.0 is my 2nd Clicker Game I made and in total my 3rd Game I made.</string>
-    <string name="plc2.0SCBTNTXT">View the Source Code of PLC 2.0</string>
-    <string name="plcInfoBTNTXT">Get more Infos about PLC</string>
+    <string name="backToMADEBTNTXT">Gehe zurück zur Haupt Aktivität</string>
+    <string name="catClickerDEDescTXT">Cat Clicker ist ein \"Made With Unity\" Spiel wo Sie auf verschiedene Katzen zu klicken um sie zu bekommen. Cat Clicker ist mein 4. Klicker Spiel was ich gemacht habe und im ganzen mein 5. Spiel was ich gemacht habe.</string>
+    <string name="FMDevDETXT">Hergestellt von Freetime Maker</string>
+    <string name="clickerPermDETXT">Berechtigungen: Internet, Externen Speicher schreiben und ich weiss nicht mehr</string>
+    <string name="MAOFMDEBTNTXT">Mehr Apps und Spiele von Freetime Maker</string>
+
 </resources>

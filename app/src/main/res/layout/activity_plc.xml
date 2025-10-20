@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/PLCLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/PLCText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/plcNameTXT" />
+                android:text="Programming Language Clicker" />
 
         </LinearLayout>
 
@@ -47,14 +47,14 @@
             android:id="@+id/PLCVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plcVersionTXT" />
+            android:text="Version: 1.0.4" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/PLCDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plcDownBTNTXT" />
+            android:text="Download Programming Language Clicker" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"

@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/PLC2Logo"
@@ -38,7 +38,7 @@
                 android:id="@+id/PLC2Text"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/plc2.0TXT" />
+                android:text="PLC 2.0" />
 
         </LinearLayout>
 
@@ -47,14 +47,14 @@
             android:id="@+id/PLC2Version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plc2.0VersionTXT" />
+            android:text="Version: 1.0.3" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/PLC2Dbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plc2.0DownBTNTXT" />
+            android:text="Download PLC 2.0" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
@@ -82,7 +82,7 @@
             android:id="@+id/PLC2Source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plc2.0SCBTNTXT" />
+            android:text="View the Source Code of PLC 2.0" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

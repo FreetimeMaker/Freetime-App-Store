@@ -28,13 +28,13 @@
                 android:id="@+id/FM"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/donoTXTFMA" />
+                android:text="Support Freetime Maker" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/fmDonobtn"
                 android:layout_width="150dp"
                 android:layout_height="75dp"
-                android:text="@string/donoBTNTXTFMA" />
+                android:text="Support Freetime Maker" />
 
         </LinearLayout>
 
@@ -53,13 +53,13 @@
                 android:id="@+id/GeoWeatherText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/gwNameTXT" />
+                android:text="GeoWeather" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/gwInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/gwInfoBTNTXT" />
+                android:text="Get more Infos about GeoWeather" />
         </LinearLayout>
 
         <LinearLayout
@@ -77,13 +77,13 @@
                 android:id="@+id/DonoTXT"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/donNameTXT" />
+                android:text="Donation" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/donoInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/donInfoBTNTXT" />
+                android:text="Get more Infos about Donation" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,13 +101,13 @@
                 android:id="@+id/fasText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/FASTXT" />
+                android:text="Freetime App Store" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/fasInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/FASBTNTXT" />
+                android:text="Get more Infos about Freetime App Store" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,13 +125,13 @@
                 android:id="@+id/catText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/catClickerTXT" />
+                android:text="Cat Clicker" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/catInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/catClickerBTNTXT" />
+                android:text="Get more Infos about Cat Clicker" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,13 +149,13 @@
                 android:id="@+id/plcText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/plcNameTXT" />
+                android:text="Programming Language Clicker" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/plcInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/plcInfoBTNTXT" />
+                android:text="Get more Infos about Programming Language Clicker" />
         </LinearLayout>
 
         <LinearLayout
@@ -173,13 +173,13 @@
                 android:id="@+id/plc2Text"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/plc2.0TXT" />
+                android:text="PLC 2.0" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/plc2Infobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/plc2.0BTNTXT" />
+                android:text="Get more Infos about PLC 2.0" />
         </LinearLayout>
 
         <LinearLayout
@@ -197,13 +197,13 @@
                 android:id="@+id/platText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/PlatNameTXT" />
+                android:text="2D Platformer" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/platInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/platInfoBTNTXT" />
+                android:text="Get more Infos about 2D Platformer" />
         </LinearLayout>
 
         <LinearLayout
@@ -221,13 +221,13 @@
                 android:id="@+id/osText"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/osNameTXT" />
+                android:text="OS Clicker" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/osInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/osInfoBTNTXT" />
+                android:text="Get more Infos about OS Clicker" />
         </LinearLayout>
 
         <LinearLayout
@@ -245,13 +245,13 @@
                 android:id="@+id/ccText"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:text="@string/ccTXT" />
+                android:text="Crypto Clicker" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/cryptoInfobtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/ccBTNTXT" />
+                android:text="Get more Infos about Crypto Clicker" />
         </LinearLayout>
 
         <LinearLayout
@@ -268,13 +268,13 @@
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="Go Back to the Main Activity" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/backbtn"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="Go Back" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

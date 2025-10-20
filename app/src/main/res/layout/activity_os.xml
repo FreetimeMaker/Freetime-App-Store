@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/osLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/osText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/osNameTXT" />
+                android:text="OS Clicker" />
 
         </LinearLayout>
 
@@ -47,14 +47,14 @@
             android:id="@+id/osVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/osVersionTXT" />
+            android:text="Version: 1.0.0" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/osDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/osDownBTNTXT" />
+            android:text="Download OS Clicker" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"

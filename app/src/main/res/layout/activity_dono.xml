@@ -26,7 +26,7 @@
                 android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:src="@drawable/back_btn"
-                android:text="@string/backTXTANDbackBTNTXT" />
+                android:text="@string/backToMABTNTXT" />
 
             <ImageView
                 android:id="@+id/DonationLogo"
@@ -38,7 +38,7 @@
                 android:id="@+id/DonationText"
                 android:layout_width="150dp"
                 android:layout_height="55dp"
-                android:text="@string/donNameTXT" />
+                android:text="Donation" />
 
         </LinearLayout>
 
@@ -47,21 +47,21 @@
             android:id="@+id/DonationVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donVersionTXT" />
+            android:text="Version: 1.0.3" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/DonationDbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donDownBTNTXT" />
+            android:text="Download Donation" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
             android:id="@+id/DonationDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donDescTXT" />
+            android:text="Donation is like the Name already says an app where you can Donate." />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_marginTop="16dp"
@@ -75,14 +75,14 @@
             android:id="@+id/DonationPerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donPermTXT" />
+            android:text="Permissions: Internet" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"
             android:id="@+id/DonationSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donSCBTNTXT" />
+            android:text="View the Source Code of Donation" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_marginTop="16dp"

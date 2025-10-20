@@ -36,7 +36,7 @@ public class RadioPlayerJavaActivity extends AppCompatActivity {
 
         Button RPJDownBtn = findViewById(R.id.RPJDownBtn);
         RPJDownBtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Radio-Player-Java/releases/download/v1.0.0/Radio-Player-Java.apk"; // Direct APK link
+            String fileUrl = "https://github.com/FreetimeMaker/Radio-Player-Java/releases/download/v1.0.1Radio-Player-Java.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
             request.setTitle("Radio Player (Java) Download");

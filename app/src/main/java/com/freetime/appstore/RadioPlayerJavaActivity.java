@@ -36,7 +36,7 @@ public class RadioPlayerJavaActivity extends AppCompatActivity {
 
         Button RPJDownBtn = findViewById(R.id.RPJDownBtn);
         RPJDownBtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Radio-Player-Java/releases/download/v1.0.2Radio-Player-Java.apk"; // Direct APK link
+            String fileUrl = "https://github.com/FreetimeMaker/Radio-Player-Java/releases/download/v1.0.2/Radio-Player.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
             request.setTitle("Radio Player (Java) Download");
@@ -45,10 +45,10 @@ public class RadioPlayerJavaActivity extends AppCompatActivity {
 
             // For Android 7 to Android 10
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Radio-Player-Java.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Radio-Player.apk");
             } else {
                 // For Android 10+
-                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Radio-Player-Java.apk");
+                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Radio-Player.apk");
             }
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);

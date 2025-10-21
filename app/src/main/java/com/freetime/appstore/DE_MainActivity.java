@@ -71,6 +71,12 @@ public class DE_MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button rpjInfobtn = findViewById(R.id.rpjInfobtn);
+        rpjInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(DE_MainActivity.this, RadioPlayerJavaActivity.class);
+            startActivity(intent);
+        });
+
         Button ghInfobtn = findViewById(id.ghInfobtn);
         ghInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(DE_MainActivity.this, GH_Activity.class);

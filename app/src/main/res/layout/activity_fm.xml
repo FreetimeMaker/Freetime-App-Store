@@ -256,6 +256,30 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rpjLogo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/radio_player_java_logo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rpjText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Radio Player (Java)" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rpjInfobtn"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Get more Infos about Radio Player (Java)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 

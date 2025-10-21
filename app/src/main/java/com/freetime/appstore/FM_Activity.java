@@ -73,8 +73,6 @@ public class FM_Activity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
         Button osInfobtn = findViewById(R.id.osInfobtn);
         osInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, OS_Activity.class);
@@ -84,6 +82,12 @@ public class FM_Activity extends AppCompatActivity {
         Button cryptoInfobtn = findViewById(R.id.cryptoInfobtn);
         cryptoInfobtn.setOnClickListener(v -> {
             Intent intent = new Intent(FM_Activity.this, CryptoClickerActivity.class);
+            startActivity(intent);
+        });
+
+        Button rpjInfobtn = findViewById(R.id.rpjInfobtn);
+        rpjInfobtn.setOnClickListener(v -> {
+            Intent intent = new Intent(FM_Activity.this, RadioPlayerJavaActivity.class);
             startActivity(intent);
         });
 

@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -28,6 +29,15 @@ public class FAS_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fas);
 
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+        );
+
         Button backbtn = findViewById(R.id.backbtn);
         backbtn.setOnClickListener(v -> {
             Intent intent = new Intent(FAS_Activity.this, MainActivity.class);
@@ -36,7 +46,7 @@ public class FAS_Activity extends AppCompatActivity {
 
         Button FASDbtn = findViewById(R.id.FASDbtn);
         FASDbtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.1.7/FAS.apk"; // Direct APK link
+            String fileUrl = "https://github.com/FreetimeMaker/Freetime-App-Store/releases/download/v1.1.8/FAS.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
             request.setTitle("FAS Download");

@@ -19,5 +19,7 @@
     <string name="FMDevDETXT">Hergestellt von Freetime Maker</string>
     <string name="clickerPermDETXT">Berechtigungen: Internet, Externen Speicher schreiben und ich weiss nicht mehr</string>
     <string name="MAOFMDEBTNTXT">Mehr Apps und Spiele von Freetime Maker</string>
+    <string name="title_activity_kpdhjactivity">KPDHJActivity</string>
+    <string name="title_activity_kpdhj">KPDHJ_Activity</string>
 
 </resources>

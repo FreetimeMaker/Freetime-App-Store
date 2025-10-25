@@ -1,280 +1,347 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
     tools:context=".FM_Activity">
 
-    <LinearLayout
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent" >
+        android:fitsSystemWindows="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/fmLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/fas_logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent" >
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/FM"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Support Freetime Maker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/fmDonobtn"
-                android:layout_width="150dp"
-                android:layout_height="75dp"
-                android:text="Support Freetime Maker" />
+                    <ImageView
+                        android:id="@+id/fmLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/fas_logo" />
 
-        </LinearLayout>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/FM"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Support Freetime Maker" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fmDonobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:text="Support Freetime Maker" />
 
-            <ImageView
-                android:id="@+id/GeoWeatherLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/geoweather_logo" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/GeoWeatherText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="GeoWeather" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/gwInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about GeoWeather" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/GeoWeatherLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/geoweather_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/GeoWeatherText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="GeoWeather" />
 
-            <ImageView
-                android:id="@+id/DonoLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/donation_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/gwInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about GeoWeather" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/DonoTXT"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Donation" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/donoInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about Donation" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/DonoLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/donation_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/DonoTXT"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Donation" />
 
-            <ImageView
-                android:id="@+id/fasLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/fas_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/donoInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Donation" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/fasText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Freetime App Store" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/fasInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about Freetime App Store" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/fasLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/fas_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/fasText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Freetime App Store" />
 
-            <ImageView
-                android:id="@+id/catLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/cat_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fasInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Freetime App Store" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/catText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Cat Clicker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/catInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about Cat Clicker" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/catLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/cat_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/catText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Cat Clicker" />
 
-            <ImageView
-                android:id="@+id/plcLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/plc_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/catInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Cat Clicker" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/plcText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Programming Language Clicker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/plcInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about Programming Language Clicker" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/plcLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/plc_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/plcText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Programming Language Clicker" />
 
-            <ImageView
-                android:id="@+id/plc2Logo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/plc2_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/plcInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Programming Language Clicker" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/plc2Text"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="PLC 2.0" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/plc2Infobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about PLC 2.0" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/plc2Logo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/plc2_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/plc2Text"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="PLC 2.0" />
 
-            <ImageView
-                android:id="@+id/platLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/platformer_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/plc2Infobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about PLC 2.0" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/platText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="2D Platformer" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/platInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about 2D Platformer" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/platLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/platformer_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/platText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="2D Platformer" />
 
-            <ImageView
-                android:id="@+id/osLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/os_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/platInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about 2D Platformer" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/osText"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="OS Clicker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/osInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about OS Clicker" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/osLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/os_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/osText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="OS Clicker" />
 
-            <ImageView
-                android:id="@+id/cryptoLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/crypto_logo" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/osInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about OS Clicker" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/ccText"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="Crypto Clicker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/cryptoInfobtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Get more Infos about Crypto Clicker" />
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/cryptoLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/crypto_logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/ccText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="Crypto Clicker" />
 
-            <ImageView
-                android:id="@+id/backLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/back_btn" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/cryptoInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Crypto Clicker" />
+                </LinearLayout>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Go Back to the Main Activity" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/backbtn"
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:text="Go Back" />
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+                    <ImageView
+                        android:id="@+id/RPJLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/radio_player_java_logo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/RPJText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="Radio Player (Java)" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/RPJInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about Radio Player (Java)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/KPDHJLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/kpdhj_logo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/KPDHJText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="K-Pop Demon Hunters (Java)" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/KPDHJInfobtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Get more Infos about K-Pop Demon Hunters (Java)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/backLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/back_btn" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Go Back to the Main Activity" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/backbtn"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:text="Go Back" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

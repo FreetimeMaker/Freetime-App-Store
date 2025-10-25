@@ -22,12 +22,12 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 
-public class CatClickerActivity extends AppCompatActivity {
+public class KPDHJ_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cat_clicker);
+        setContentView(R.layout.activity_kpdhj);
 
         getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
@@ -40,41 +40,41 @@ public class CatClickerActivity extends AppCompatActivity {
 
         Button backbtn = findViewById(R.id.backbtn);
         backbtn.setOnClickListener(v -> {
-            Intent intent = new Intent(CatClickerActivity.this, MainActivity.class);
+            Intent intent = new Intent(KPDHJ_Activity.this, MainActivity.class);
             startActivity(intent);
         });
 
-        Button CatDbtn = findViewById(R.id.CatDbtn);
-        CatDbtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Cat-Clicker/releases/download/v1.0.7/Cat.apk"; // Direct APK link
+        Button KPDHJDownBtn = findViewById(R.id.KPDHJDownBtn);
+        KPDHJDownBtn.setOnClickListener(v -> {
+            String fileUrl = "https://github.com/FreetimeMaker/K-Pop-Demon-Hunters-Java/releases/download/v1.0.3/KPD.apk"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
-            request.setTitle("Cat Clicker Download");
-            request.setDescription("Downloading Cat Clicker Game...");
+            request.setTitle("K-Pop Demon Hunters (Java) Download");
+            request.setDescription("Downloading K-Pop Demon Hunters (Java)...");
             request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 
             // For Android 7 to Android 10
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Cat.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "KPD.apk");
             } else {
                 // For Android 10+
-                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Cat.apk");
+                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "KPD.apk");
             }
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
             downloadManager.enqueue(request);
         });
 
-        Button CatSource = findViewById(R.id.CatSource);
-        CatSource.setOnClickListener(v -> {
-            String url = "https://github.com/FreetimeMaker/Cat-Clicker/"; // URL of the GitHub repository
+        Button RPJSource = findViewById(R.id.KPDHJSource);
+        RPJSource.setOnClickListener(v -> {
+            String url = "https://github.com/FreetimeMaker/K-Pop-Demon-Hunters-Java/"; // URL of the GitHub repository
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         });
 
         Button MAOFM = findViewById(R.id.MAOFM);
         MAOFM.setOnClickListener(v -> {
-            Intent intent = new Intent(CatClickerActivity.this, FM_Activity.class);
+            Intent intent = new Intent(KPDHJ_Activity.this, FM_Activity.class);
             startActivity(intent);
         });
     }

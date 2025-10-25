@@ -1,135 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F6F8"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
+    tools:context=".FM_Dono_Activity">
 
-    <LinearLayout
-        android:layout_height="wrap_content"
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txtDonateTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="Support the work of Freetime Maker"
-            android:textColor="#222"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txtDonateDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            android:text="Freetime Maker would be happy about a little Donation"
-            android:textColor="#555"
-            android:textSize="16sp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateOxa"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate via OxaPay"
-            android:textColor="#FFFFFF" />
+            android:layout_height="match_parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateCoin"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate via Coinbase"
-            android:textColor="#FFFFFF"/>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateBTC"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Bitcoin"
-            android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateETH"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Ethereum"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtDonateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="Support the work of Freetime Maker"
+                    android:textColor="#222"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateUSDT"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Tether/USDT"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtDonateDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:text="Freetime Maker would be happy about a little Donation"
+                    android:textColor="#555"
+                    android:textSize="16sp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateUSDC"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate USDC"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateOxa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate via OxaPay"
+                    android:textColor="#FFFFFF" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateSHIB"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate SHIB"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateCoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate via Coinbase"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateDOGE"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Dogecoin"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateBTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Bitcoin"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateTRON"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Tron"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateETH"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Ethereum"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateLTC"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Litecoin"
-            android:textColor="#FFFFFF"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateUSDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Tether/USDT"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateBNB"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate BNB"
-            android:textColor="#FFFFFF" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateUSDC"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate USDC"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonateSOL"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate Solana"
-            android:textColor="#FFFFFF" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateSHIB"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate SHIB"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnDonatePEPE"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Donate PEPE"
-            android:textColor="#FFFFFF" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateDOGE"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Dogecoin"
+                    android:textColor="#FFFFFF"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGoBack"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Go Back to Freetime Maker"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
-</ScrollView>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateTRON"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Tron"
+                    android:textColor="#FFFFFF"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateLTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Litecoin"
+                    android:textColor="#FFFFFF"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateBNB"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate BNB"
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonateSOL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate Solana"
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDonatePEPE"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Donate PEPE"
+                    android:textColor="#FFFFFF" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGoBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Go Back to Freetime Maker"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

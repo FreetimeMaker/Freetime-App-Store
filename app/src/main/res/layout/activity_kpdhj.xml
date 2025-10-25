@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
-    tools:context=".PLC2Activity">
+    tools:context=".KPDHJ_Activity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -45,60 +45,60 @@
                         android:text="@string/backToMABTNTXT" />
 
                     <ImageView
-                        android:id="@+id/PLC2Logo"
+                        android:id="@+id/KPDHJLogo"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
-                        android:src="@drawable/plc2_logo" />
+                        android:src="@drawable/kpdhj_logo" />
 
                     <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/PLC2Text"
+                        android:id="@+id/KPDHJText"
                         android:layout_width="150dp"
                         android:layout_height="55dp"
-                        android:text="PLC 2.0" />
+                        android:text="K-Pop Demon Hunters (Java)" />
 
                 </LinearLayout>
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Version"
+                    android:id="@+id/KPDHJVersion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Version: 1.0.3" />
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Dbtn"
+                    android:id="@+id/KPDHJDownBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Download PLC 2.0" />
+                    android:text="Download K-Pop Demon Hunters (Java)" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Desc"
+                    android:id="@+id/KPDHJDesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/plc2.0DescTXT" />
+                    android:text="K-Pop Demon Hunters (Java) is a Fan App for the Film/Movie K-Pop Demon Hunters where you can get Infos about the Characters, News about the Film/Movie, Listen to Music from the Film/Movie and much More." />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Dev"
+                    android:id="@+id/KPDHJDev"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/FMDevTXT" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Perms"
+                    android:id="@+id/KPDHJPerms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/clickerPermTXT" />
+                    android:text="Permissions: Internet" />
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_marginTop="16dp"
-                    android:id="@+id/PLC2Source"
+                    android:id="@+id/KPDHJSource"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="View the Source Code of PLC 2.0" />
+                    android:text="View the Source Code of K-Pop Demon Hunters (Java)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_marginTop="16dp"

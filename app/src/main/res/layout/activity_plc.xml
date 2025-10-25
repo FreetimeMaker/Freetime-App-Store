@@ -1,87 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GW_Activity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
+    tools:context=".PLC_Activity">
 
-    <LinearLayout
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_height="match_parent">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/backbtn"
-                android:layout_width="150dp"
-                android:layout_height="55dp"
-                android:src="@drawable/back_btn"
-                android:text="@string/backToMABTNTXT" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/PLCLogo"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:src="@drawable/plc_logo" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
 
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/PLCText"
-                android:layout_width="150dp"
-                android:layout_height="55dp"
-                android:text="Programming Language Clicker" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/backbtn"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/back_btn"
+                        android:text="@string/backToMABTNTXT" />
 
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/PLCLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/plc_logo" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_marginTop="16dp"
-            android:id="@+id/PLCVersion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Version: 1.0.4" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/PLCText"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:text="Programming Language Clicker" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_marginTop="16dp"
-            android:id="@+id/PLCDbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Download Programming Language Clicker" />
+                </LinearLayout>
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_marginTop="16dp"
-            android:id="@+id/PLCDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/plcDescTXT" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/PLCVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version: 1.0.4" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_marginTop="16dp"
-            android:id="@+id/PLCDev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FMDevTXT" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/PLCDbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download Programming Language Clicker" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_marginTop="16dp"
-            android:id="@+id/PLCPerms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/clickerPermTXT" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/PLCDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plcDescTXT" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_marginTop="16dp"
-            android:id="@+id/MAOFM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MAOFMBTNTXT" />
-    </LinearLayout>
-</ScrollView>
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/PLCDev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FMDevTXT" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/PLCPerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clickerPermTXT" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/MAOFM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MAOFMBTNTXT" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

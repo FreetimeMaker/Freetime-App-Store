@@ -45,10 +45,10 @@ public class RadioPlayerJavaActivity extends AppCompatActivity {
 
             // For Android 7 to Android 10
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Radio-Player-Java.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Radio-Player.apk");
             } else {
                 // For Android 10+
-                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Radio-Player-Java.apk");
+                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Radio-Player.apk");
             }
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);

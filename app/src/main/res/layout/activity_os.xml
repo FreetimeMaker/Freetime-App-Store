@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
-    tools:context=".OS_Activity">
+    tools:context=".english.games.freetime.OS_Activity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,

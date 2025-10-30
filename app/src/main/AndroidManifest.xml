@@ -8,7 +8,6 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -28,7 +27,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
         <activity
-            android:name=".MainActivity"
+            android:name=".english.main.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen">
@@ -39,112 +38,163 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DE_MainActivity"
+            android:name=".german.main.DE_MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".FM_Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
-        <activity
-            android:name=".Dono_Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
-        <activity
-            android:name=".GW_Activity"
+            android:name=".developers.freetime.FM_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".FAS_Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
-        <activity
-            android:name=".FM_Dono_Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
-        <activity
-            android:name=".BitcoinActivity"
+            android:name=".english.apps.freetime.Dono_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".EthereumActivity"
+            android:name=".english.apps.freetime.GW_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".OxaPayActivity"
+            android:name=".english.apps.freetime.FAS_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".CoinbaseActivity"
+            android:name=".developers.freetime.FM_Dono_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".BNB_Activity"
+            android:name=".donations.freetime.BitcoinActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".PEPE_Activity"
+            android:name=".donations.freetime.EthereumActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".LTC_Activity"
+            android:name=".donations.freetime.OxaPayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".DogeActivity"
+            android:name=".donations.freetime.CoinbaseActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".TronActivity"
+            android:name=".donations.freetime.BNB_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".ShibActivity"
+            android:name=".donations.freetime.PEPE_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".SOL_Activity"
+            android:name=".donations.freetime.LTC_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".USDC_Activity"
+            android:name=".donations.freetime.DogeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".USDT_Activity"
+            android:name=".donations.freetime.TronActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".GH_Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
-        <activity android:name=".PLC2Activity" />
-        <activity
-            android:name=".CatClickerActivity"
+            android:name=".donations.freetime.ShibActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".DE_CatClickerActivity"
+            android:name=".donations.freetime.SOL_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".CryptoClickerActivity"
+            android:name=".donations.freetime.USDC_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".PlatformerActivity"
+            android:name=".donations.freetime.USDT_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".OS_Activity"
+            android:name=".english.contributions.GH_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".PLC_Activity"
+            android:name=".english.games.freetime.PLC2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/Theme.FreetimeAppStore.Fullscreen"/>
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
         <activity
-            android:name=".KPDHJ_Activity"
+            android:name=".english.games.freetime.CatClickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.DE_CatClickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.games.freetime.CryptoClickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.games.freetime.PlatformerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.games.freetime.OS_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.games.freetime.PLC_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.apps.freetime.KPDHJ_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".english.apps.freetime.SSMPCJ_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.contributions.GH_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.PLC2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.CryptoClickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.PlatformerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.OS_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.games.freetime.PLC_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.apps.freetime.KPDHJ_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.apps.freetime.SSMPCJ_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.apps.freetime.Dono_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.apps.freetime.GW_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
+        <activity
+            android:name=".german.apps.freetime.FAS_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.FreetimeAppStore.Fullscreen" />
     </application>

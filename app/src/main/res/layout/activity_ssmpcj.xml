@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
+    tools:context=".english.apps.freetime.SSMPCJ_Activity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/backbtn"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/back_btn"
+                        android:text="@string/backToMABTNTXT" />
+
+                    <ImageView
+                        android:id="@+id/SSMPCJLogo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ssmpcj_logo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/SSMPCJText"
+                        android:layout_width="150dp"
+                        android:layout_height="55dp"
+                        android:text="SuperSMP Companion (Java)" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version: 1.0.2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJDbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download SuperSMP Companion (Java)" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SuperSMP Companion (Java) is an unofficial Companion App for the Minecraft Server SuperSMP." />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJDev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FMDevTXT" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJPerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permissions: nternet" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/SSMPCJSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go to the Source Code of SuperSMP Companion (Java)" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/MAOFM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MAOFMBTNTXT" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>

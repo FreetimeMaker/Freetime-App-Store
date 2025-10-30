@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:theme="@style/ThemeOverlay.FreetimeAppStore.FullscreenContainer"
-    tools:context=".DE_CatClickerActivity">
+    tools:context=".german.games.freetime.DE_CatClickerActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -63,7 +63,7 @@
                 android:id="@+id/CatVersion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Version: 1.0.7" />
+                android:text="Version: 1.0.8" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_marginTop="16dp"

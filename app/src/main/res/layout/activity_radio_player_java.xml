@@ -72,6 +72,15 @@
                 android:layout_height="wrap_content"
                 android:text="Download Radio Player (Java)" />
 
+            <TextView
+                android:id="@+id/versionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lade Daten..."
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+            />
+
             <com.google.android.material.textview.MaterialTextView
                 android:layout_marginTop="16dp"
                 android:id="@+id/RPJDesc"

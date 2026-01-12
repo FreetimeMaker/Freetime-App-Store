@@ -60,6 +60,13 @@ public class PLC_Activity extends AppCompatActivity {
             downloadManager.enqueue(request);
         });
 
+        Button PLCSource = findViewById(R.id.PLCSource);
+        PLCSource.setOnClickListener(v -> {
+            String url = "https://github.com/FreetimeMaker/PLC/"; // URL of the GitHub repository
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
+
         Button MAOFM = findViewById(R.id.MAOFM);
         MAOFM.setOnClickListener(v -> {
             Intent intent = new Intent(PLC_Activity.this, FM_Activity.class);

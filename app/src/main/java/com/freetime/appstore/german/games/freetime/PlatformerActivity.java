@@ -41,10 +41,10 @@ public class PlatformerActivity extends AppCompatActivity {
 
         Button platDbtn = findViewById(R.id.platDbtn);
         platDbtn.setOnClickListener(v -> {
-            String fileUrl = "https://github.com/FreetimeMaker/Platformer/releases/download/v1.0.8/Platformer.apk"; // Direct APK link
+            String fileUrl = "https://api.github.com/repos/FreetimeMaker/Platformer/releases/latest"; // Direct APK link
 
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(fileUrl));
-            request.setTitle("Cat Clicker Download");
+            request.setTitle("Platformer Download");
             request.setDescription("Downloading 2D Platformer Game...");
             request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 
@@ -53,7 +53,7 @@ public class PlatformerActivity extends AppCompatActivity {
                 request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Platformer.apk");
             } else {
                 // For Android 10+
-                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Cat.apk");
+                request.setDestinationInExternalFilesDir(getApplicationContext(), Environment.DIRECTORY_DOWNLOADS, "Platformer.apk");
             }
 
             DownloadManager downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);

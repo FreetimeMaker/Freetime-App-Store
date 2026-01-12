@@ -60,6 +60,13 @@ public class OS_Activity extends AppCompatActivity {
             downloadManager.enqueue(request);
         });
 
+        Button OSSource = findViewById(R.id.OSSource);
+        OSSource.setOnClickListener(v -> {
+            String url = "https://github.com/FreetimeMaker/OS-Clicker/"; // URL of the GitHub repository
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
+
         Button MAOFM = findViewById(R.id.MAOFM);
         MAOFM.setOnClickListener(v -> {
             Intent intent = new Intent(OS_Activity.this, FM_Activity.class);

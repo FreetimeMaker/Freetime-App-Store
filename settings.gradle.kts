@@ -20,6 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Freetime App Store"
+rootProject.name = "Luma Store"
 include(":app")
-
